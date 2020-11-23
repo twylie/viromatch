@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="description" content="ViroMatch: Viral Sequence Identification">
+<meta name="author" content="T.N. Wylie">
+
+    <link rel="icon" href="/viromatch/images/favicon.png" type="image/png">
+
+    <title>Command Line Arguments :: ViroMatch</title>
+
+    
+    <link href="/viromatch/css/nucleus.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/fontawesome-all.min.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/hybrid.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/featherlight.min.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/perfect-scrollbar.min.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/auto-complete.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/atom-one-dark-reasonable.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/theme.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/hugo-theme.css?1606160049" rel="stylesheet">
+    
+    <link href="/viromatch/css/theme-red.css?1606160049" rel="stylesheet">
+    
+    
+
+    <script src="/viromatch/js/jquery-3.3.1.min.js?1606160049"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/viromatch/execution/cli_args/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/viromatch/'>
+
+
+
+
+<svg version="1.1" width="200" height="50" viewBox="0 0 1100 250" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+  <g
+     id="layer1">
+    <g
+       id="g123">
+      <g
+         id="g486"
+         transform="matrix(8.8574711,0,0,8.242622,15.277146,-8.3433826)"
+         style="fill:#ffffff">
+        <g
+           id="g430"
+           style="fill:#ffffff">
+          <path
+             style="fill:#ffffff"
+             d="m 31.917,17.595 c -0.911,-0.691 -2.213,-0.519 -2.91,0.396 -0.066,0.093 -0.12,0.19 -0.174,0.285 l -5.095,-0.863 c 0.048,-0.353 0.08,-0.709 0.08,-1.075 0,-1.481 -0.412,-2.863 -1.118,-4.053 l 3.248,-2.101 c 0.207,0.14 0.46,0.216 0.728,0.191 0.618,-0.057 1.072,-0.599 1.018,-1.221 -0.056,-0.618 -0.603,-1.071 -1.221,-1.016 -0.618,0.055 -1.071,0.603 -1.017,1.221 0.005,0.062 0.021,0.117 0.033,0.178 L 22.262,11.62 C 21.618,10.75 20.808,10.016 19.869,9.469 l 2.318,-3.662 c 0.247,0.04 0.509,0.003 0.742,-0.132 0.536,-0.312 0.722,-0.996 0.409,-1.532 -0.311,-0.539 -0.997,-0.725 -1.534,-0.413 -0.536,0.311 -0.721,0.997 -0.41,1.536 0.03,0.053 0.064,0.099 0.104,0.146 L 19.163,9.099 C 18.373,8.738 17.518,8.495 16.616,8.41 L 17.09,5.61 C 17.272,5.566 17.44,5.475 17.56,5.319 17.834,4.955 17.767,4.438 17.404,4.164 17.041,3.886 16.523,3.957 16.247,4.319 15.973,4.681 16.042,5.2 16.403,5.475 16.438,5.498 16.479,5.507 16.515,5.53 L 16.031,8.383 C 15.97,8.381 15.912,8.374 15.852,8.374 c -1.034,0 -2.019,0.202 -2.922,0.562 L 10.695,4.83 C 10.912,4.555 11.045,4.211 11.039,3.833 11.025,2.96 10.31,2.263 9.437,2.281 8.567,2.295 7.873,3.01 7.886,3.882 7.899,4.752 8.615,5.444 9.487,5.432 9.574,5.43 9.657,5.415 9.74,5.402 l 2.184,4.012 C 10.832,10.031 9.9,10.902 9.209,11.944 L 5.946,9.384 C 6.011,9.145 5.999,8.881 5.891,8.635 5.636,8.07 4.973,7.817 4.407,8.072 3.839,8.326 3.587,8.991 3.841,9.558 c 0.257,0.564 0.921,0.816 1.487,0.562 0.055,-0.026 0.105,-0.06 0.155,-0.092 l 3.316,2.607 c -0.49,0.937 -0.8,1.982 -0.884,3.096 L 3.02,15.722 C 2.883,15.4 2.644,15.117 2.311,14.943 1.54,14.536 0.584,14.83 0.181,15.602 c -0.405,0.771 -0.109,1.725 0.659,2.129 0.771,0.408 1.726,0.11 2.132,-0.661 0.041,-0.075 0.067,-0.153 0.095,-0.234 l 4.845,0.012 c 0.04,0.631 0.146,1.247 0.325,1.833 L 5.106,19.887 C 4.933,19.708 4.699,19.584 4.431,19.552 3.815,19.482 3.26,19.924 3.189,20.538 c -0.071,0.616 0.37,1.178 0.988,1.246 0.615,0.069 1.171,-0.374 1.241,-0.989 0.006,-0.061 0.005,-0.117 0.004,-0.182 l 3.084,-1.188 c 0.611,1.449 1.641,2.683 2.937,3.542 L 9.931,24.528 C 9.698,24.439 9.434,24.422 9.179,24.506 8.587,24.703 8.27,25.337 8.463,25.923 c 0.193,0.59 0.83,0.913 1.418,0.722 0.59,-0.198 0.908,-0.833 0.717,-1.424 -0.021,-0.058 -0.045,-0.11 -0.072,-0.167 l 1.619,-1.67 c 0.771,0.407 1.617,0.687 2.512,0.819 l -0.431,4.041 c -0.244,0.056 -0.473,0.192 -0.639,0.401 -0.38,0.491 -0.292,1.193 0.2,1.577 0.492,0.381 1.197,0.289 1.578,-0.201 0.379,-0.492 0.288,-1.195 -0.203,-1.578 -0.048,-0.033 -0.099,-0.062 -0.149,-0.093 l 0.433,-4.068 c 0.136,0.009 0.27,0.021 0.408,0.021 1.035,0 2.021,-0.203 2.93,-0.562 l 0.804,3.58 c -0.201,0.146 -0.36,0.354 -0.431,0.615 -0.16,0.6 0.193,1.215 0.794,1.376 0.599,0.157 1.216,-0.193 1.376,-0.795 0.16,-0.601 -0.196,-1.215 -0.796,-1.376 -0.059,-0.016 -0.117,-0.022 -0.178,-0.029 l -0.832,-3.706 c 0.579,-0.301 1.111,-0.671 1.597,-1.103 l 1.102,1.552 c -0.099,0.156 -0.15,0.338 -0.125,0.537 0.061,0.448 0.477,0.766 0.929,0.708 0.453,-0.063 0.768,-0.479 0.708,-0.93 -0.062,-0.453 -0.479,-0.768 -0.931,-0.707 -0.042,0.006 -0.075,0.028 -0.115,0.04 l -1.137,-1.602 c 0.838,-0.854 1.479,-1.896 1.864,-3.062 l 5.241,0.891 c 0.108,0.451 0.356,0.869 0.751,1.168 0.913,0.693 2.216,0.52 2.911,-0.395 0.692,-0.911 0.514,-2.213 -0.399,-2.908 z m -18.54,-1.626 c -0.655,0 -1.19,-0.534 -1.19,-1.194 0,-0.657 0.535,-1.188 1.19,-1.188 0.658,0 1.192,0.53 1.192,1.188 0,0.659 -0.533,1.194 -1.192,1.194 z m 3.071,2.588 c -0.482,0 -0.874,-0.392 -0.874,-0.873 0,-0.486 0.392,-0.875 0.874,-0.875 0.483,0 0.875,0.388 0.875,0.875 -0.001,0.484 -0.392,0.873 -0.875,0.873 z m 3.246,-3.703 c -0.712,0 -1.289,-0.577 -1.289,-1.287 0,-0.715 0.577,-1.293 1.289,-1.293 0.712,0 1.29,0.578 1.29,1.293 0,0.71 -0.577,1.287 -1.29,1.287 z"
+             id="path428" />
+        </g>
+        <g
+           id="g432"
+           style="fill:#ffffff" />
+        <g
+           id="g434"
+           style="fill:#ffffff" />
+        <g
+           id="g436"
+           style="fill:#ffffff" />
+        <g
+           id="g438"
+           style="fill:#ffffff" />
+        <g
+           id="g440"
+           style="fill:#ffffff" />
+        <g
+           id="g442"
+           style="fill:#ffffff" />
+        <g
+           id="g444"
+           style="fill:#ffffff" />
+        <g
+           id="g446"
+           style="fill:#ffffff" />
+        <g
+           id="g448"
+           style="fill:#ffffff" />
+        <g
+           id="g450"
+           style="fill:#ffffff" />
+        <g
+           id="g452"
+           style="fill:#ffffff" />
+        <g
+           id="g454"
+           style="fill:#ffffff" />
+        <g
+           id="g456"
+           style="fill:#ffffff" />
+        <g
+           id="g458"
+           style="fill:#ffffff" />
+        <g
+           id="g460"
+           style="fill:#ffffff" />
+      </g>
+ <text x="331.8631" y="182.52051" fill="#FFFF" font-family="sans-serif" font-size="149.93px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="331.8631" y="182.52051" fill="#FFFFFF" font-family="'Novacento Sans Wide'" font-size="149.93px" stroke-width=".26458">ViroMatch</tspan></text>
+</svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/viromatch/js/lunr.min.js?1606160049"></script>
+<script type="text/javascript" src="/viromatch/js/auto-complete.js?1606160049"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/twylie.github.io\/viromatch\/";
+    
+</script>
+<script type="text/javascript" src="/viromatch/js/search.js?1606160049"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/viromatch/'><i class='fas fa-home'></i>&nbsp;Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/quick_start/" title="Quick Start" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/quick_start/">
+          <b>1. </b>Quick Start
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/quick_start/install_and_execution/" title="Installation and Pipeline Execution" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/quick_start/install_and_execution/">
+          Installation and Pipeline Execution
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/" title="Download and Installation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/">
+          <b>2. </b>Download and Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/prerequisites/" title="Prerequisites" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/prerequisites/">
+          Prerequisites
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/docker/" title="Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/docker/">
+          Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/download_viromatch/" title="Download ViroMatch" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/download_viromatch/">
+          Download ViroMatch
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/databases/" title="Databases" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/databases/">
+          Databases
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/" title="Running ViroMatch" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/viromatch/execution/">
+          <b>3. </b>Running ViroMatch
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/mapping_volumes/" title="Mapping Docker Volumes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/mapping_volumes/">
+          Mapping Docker Volumes
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/interactive_docker/" title="Interactive Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/interactive_docker/">
+          Interactive Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/cli_docker/" title="Command Line Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/cli_docker/">
+          Command Line Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/cli_args/" title="Command Line Arguments" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/viromatch/execution/cli_args/">
+          Command Line Arguments
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/" title="Pipeline Overview" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/">
+          <b>4. </b>Pipeline Overview
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/summary/" title="Pipeline Summary" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/summary/">
+          Pipeline Summary
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/snakemake/" title="Snakemake" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/snakemake/">
+          Snakemake
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/steps/" title="Steps in the Pipeline" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/steps/">
+          Steps in the Pipeline
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/tools/" title="Third-Party Tools" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/tools/">
+          Third-Party Tools
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/file_types/" title="Input File Types" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/file_types/">
+          Input File Types
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/best_hit_logic/" title="Best Hit Logic" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/best_hit_logic/">
+          Best Hit Logic
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/reports/" title="Reports and Output Files" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/reports/">
+          Reports and Output Files
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/" title="Project Info" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/">
+          <b>5. </b>Project Info
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/version/" title="Version" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/version/">
+          Version
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/authors/" title="Authors" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/authors/">
+          Authors
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/license/" title="License" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/license/">
+          License
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/funding/" title="Funding" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/funding/">
+          Funding
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/disclaimer/" title="Disclaimer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/disclaimer/">
+          Disclaimer
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+<p><u>Funding</u>: NIH CTSA UL1TR002345, NIH 1R01HD095986</p>
+
+<br>
+
+<p><u>Disclaimer</u>: This resource is intended for purely research purposes. It should not be used for emergencies or medical or professional advice.</p>
+
+<br>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/80x15.png" /></a><br />Site content licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>. Copyright (C) 2019&mdash;2020 T.N. Wylie and K.M. Wylie.</P>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/viromatch/'>Home</a> > <a href='/viromatch/execution/'>Running ViroMatch</a> > Command Line Arguments
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#terse-usage-statement">Terse Usage Statement</a></li>
+    <li><a href="#detailed-usage-statement">Detailed Usage Statement</a></li>
+    <li><a href="#command-line-options">Command Line Options</a>
+      <ul>
+        <li><a href="#required-arguments">Required Arguments</a></li>
+        <li><a href="#optional-arguments">Optional Arguments</a></li>
+        <li><a href="#washington-university-specific-arguments">Washington University Specific Arguments</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Command Line Arguments
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="terse-usage-statement">Terse Usage Statement</h2>
+<p>Typing <code>viromatch</code> from the command line will display a terse usage statement.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker container run twylie/viromatch:latest viromatch
+</code></pre></div><p>Results:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">usage: viromatch [-h] [--version] [--keep] [--dryrun] [--smkcores INT]
+                 [--endqual INT] [--minn INT] [--phred 33|64] [--readlen INT]
+                 [--pid FLOAT] [--pidprox FLOAT] [--bsize INT] [--bitprox INT]
+                 [--mts INT] [--evalue FLOAT] --sampleid STR --input FILE
+                 [FILE ...] --outdir DIR --nt FILE [FILE ...] --nr FILE
+                 [FILE ...] --viralfna FILE --viralfaa FILE --host FILE
+                 --adaptor FILE --taxid FILE [--wustlconfig FILE]
+viromatch: error: the following arguments are required: --sampleid, --input, --outdir, --nt, --nr, --viralfna, --viralfaa, --host, --adaptor, --taxid
+</code></pre></div><h2 id="detailed-usage-statement">Detailed Usage Statement</h2>
+<p>You may get a detailed list of command line options using the <code>--help</code> switch from the command line.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">docker container run twylie/viromatch:latest viromatch --help
+</code></pre></div><p>Results:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">usage: viromatch [-h] [--version] [--keep] [--dryrun] [--smkcores INT]
+                 [--endqual INT] [--minn INT] [--phred 33|64] [--readlen INT]
+                 [--pid FLOAT] [--pidprox FLOAT] [--bsize INT] [--bitprox INT]
+                 [--mts INT] [--evalue FLOAT] --sampleid STR --input FILE
+                 [FILE ...] --outdir DIR --nt FILE [FILE ...] --nr FILE
+                 [FILE ...] --viralfna FILE --viralfaa FILE --host FILE
+                 --adaptor FILE --taxid FILE [--wustlconfig FILE]
+
+Read-based virome characterization pipeline.
+
+optional arguments:
+  -h, --help            Display the extended usage statement.
+  --version             Display the software version number.
+  --keep                Retain intermediate files.
+  --dryrun              Preps pipeline but no execution.
+  --smkcores INT        Number of CPU cores for Snakemake. [1]
+  --endqual INT         Trim 3&#39;-end when quality drops below value. [10]
+  --minn INT            Max percent of Ns allowed post-trimming. [50]
+  --phred 33|64         Choose phred-33 or phred-64 quality encoding. [33]
+  --readlen INT         Minimum read length after trimming. [50]
+  --pid FLOAT           Max percent id variance for nucleotide hits. [0.15]
+  --pidprox FLOAT       Max proximal percent id variance for nucleotide hits.
+                        [0.04]
+  --bsize INT           Buffer size for sorting (Gb). [1]
+  --bitprox INT         Max proximal bitscore for translated hits. [1]
+  --mts INT             Translated nucleotide max-target-seqs. [5]
+  --evalue FLOAT        Translated nucleotide max-expect-value. [0.001]
+
+required:
+  --sampleid STR        Label or id for sample.
+  --input FILE [FILE ...]
+                        Path to single input BAM or paired FASTQ file(s).
+  --outdir DIR          Path to directory for writing output.
+  --nt FILE [FILE ...]  NCBI nt nucleotide FASTA file(s) or NT.fofn file.
+  --nr FILE [FILE ...]  NCBI nr protein FASTA file(s) or NR.fofn file.
+  --viralfna FILE       Viral identity (indexed) nucleotide FASTA file.
+  --viralfaa FILE       Viral identity (indexed) translated FASTA file.
+  --host FILE           Host (indexed) FASTA file for host screening.
+  --adaptor FILE        File with adapter sequences to trim.
+  --taxid FILE          Taxonomy ID lookup file.
+
+Washington University only (LSF cluster submission):
+  --wustlconfig FILE    Path to config file for WUSTL LSF parallel processing.
+</code></pre></div><h2 id="command-line-options">Command Line Options</h2>
+<p>Details for the command line options are outlined below. Some arguments are required while others are optional.</p>
+<h3 id="required-arguments">Required Arguments</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--sampleid</code></td>
+<td align="center">string</td>
+<td>User defined text for sample identification. This text is used in the reports to help identify/track the sample.</td>
+</tr>
+<tr>
+<td align="center"><code>--input</code></td>
+<td align="center">file path(s)</td>
+<td>Path to the input read file(s). A user may provide either (1) a single input uBAM file or (2) paired FASTQ files. If a uBAM file is provided, it will be converted to paired FASTQ files for downstream processing. If paired FASTQ files are provided, the R1-file should be first followed by the R2-file, space delimited.</td>
+</tr>
+<tr>
+<td align="center"><code>--outdir</code></td>
+<td align="center">dir path</td>
+<td>Path to the directory for writing output. All ViroMatch ouput will be written here for a given instance of the pipeline.</td>
+</tr>
+<tr>
+<td align="center"><code>--nt</code></td>
+<td align="center">file path(s)</td>
+<td>Space delimited list of paths to ViroMatch&rsquo;s split NCBI nt nucleotide indexed FASTA files. Alternatively, a file with paths to the files, one per line, can be supplied instead, provided the file has a <em>.fofn</em> suffix &mdash; e.g. NT.fofn file.</td>
+</tr>
+<tr>
+<td align="center"><code>--nr</code></td>
+<td align="center">file path(s)</td>
+<td>Space delimited list of paths to ViroMatch&rsquo;s split NCBI nr nucleotide indexed FASTA files. Alternatively, a file with paths to the files, one per line, can be supplied instead, provided the file has a <em>.fofn</em> suffix &mdash; e.g. NR.fofn file.</td>
+</tr>
+<tr>
+<td align="center"><code>--viralfna</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s viral identity nucleotide indexed FASTA file. Putative viral identities come from this database prior to extended validation alignments.</td>
+</tr>
+<tr>
+<td align="center"><code>--viralfaa</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s viral identity translated nucleotide indexed FASTA file. Putative viral identities come from this database prior to extended validation alignments.</td>
+</tr>
+<tr>
+<td align="center"><code>--host</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s host indexed FASTA file used for host screening. By default we provide an indexed version of the human reference genome.</td>
+</tr>
+<tr>
+<td align="center"><code>--adaptor</code></td>
+<td align="center">file path</td>
+<td>Path to a file with adapter sequences, one per line, used for read trimming.</td>
+</tr>
+<tr>
+<td align="center"><code>--taxid</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s taxonomy database. This file provides NCBI-based taxonomy and lineages based on NCBI taxon ids.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optional-arguments">Optional Arguments</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th align="center">Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--help</code></td>
+<td align="center">switch</td>
+<td align="center"></td>
+<td>This switch will display the extended usage statement for ViroMatch command line parameters. Using this switch obviates pipeline execution.</td>
+</tr>
+<tr>
+<td align="center"><code>--version</code></td>
+<td align="center">switch</td>
+<td align="center"></td>
+<td>This switch will print the version id of the ViroMatch software being run. Using this switch obviates pipeline execution.</td>
+</tr>
+<tr>
+<td align="center"><code>--keep</code></td>
+<td align="center">switch</td>
+<td align="center"></td>
+<td>ViroMatch generates many intermediate files that are marked as <em>temporary</em> in the pipeline. By default, these files are deleted on the file system once they are no longer required for generating downstream output. Using the <code>--keep</code> switch will retain all of the temporary files produced by the pipeline. Please note, keeping these files will increase overall disk space consumption.</td>
+</tr>
+<tr>
+<td align="center"><code>--dryrun</code></td>
+<td align="center">switch</td>
+<td align="center"></td>
+<td>Running this switch will create the ViroMatch output directory and write all of the files needed to run the pipeline; however, using this switch obviates pipeline execution. This can be useful for troubleshooting or reviewing setup prior to running the pipeline. The pipeline can still be executed by manually running the <code>cmd.sh</code> script in the output directory.</td>
+</tr>
+<tr>
+<td align="center"><code>--smkcores</code></td>
+<td align="center">integer</td>
+<td align="center">1</td>
+<td>For systems with multiple processors, this value tells ViroMatch how many CPU cores to use in parallel, when possible. ViroMatch uses Snakemake for pipeline execution, which will automatically handle parallel steps. This value directly feeds Snakemake&rsquo;s <code>--cores</code> option. Note: This is <em>not</em> the same as parallel processing by submitting jobs to a compute cluster &mdash; e.g. LSF jobs.</td>
+</tr>
+<tr>
+<td align="center"><code>--endqual</code></td>
+<td align="center">integer</td>
+<td align="center">10</td>
+<td>During the adaptor trimming portion of the pipeline, we also trim the 3&rsquo;-end of reads when base quality values drop below the <code>--endqual</code> value.</td>
+</tr>
+<tr>
+<td align="center"><code>--minn</code></td>
+<td align="center">integer</td>
+<td align="center">50</td>
+<td>After trimming and low-complexity masking, a read is evaluated for the maximum percent of N&rsquo;s allowed across the read. If the percent of N&rsquo;s is greater than the <code>--minn</code> value then the read is <em>failed</em> and not used downstream. Default is 50% of a read&rsquo;s length.</td>
+</tr>
+<tr>
+<td align="center"><code>--phred</code></td>
+<td align="center">33, 64</td>
+<td align="center">33</td>
+<td>This value tells the pipeline what encoding the input FASTQ files uses. You may choose phred-33 [33] or phred-64 [64] quality encoding. Default is phred-33 encoding.</td>
+</tr>
+<tr>
+<td align="center"><code>--readlen</code></td>
+<td align="center">integer</td>
+<td align="center">50</td>
+<td>After trimming, a read is evaluated for post-processed read length. The minimum read length (in basepairs) allowable after trimming is set by the <code>--readlen</code> value. Default is 50 bp or greater to use a read downstream, else the read is <em>failed</em>.</td>
+</tr>
+<tr>
+<td align="center"><code>--pid</code></td>
+<td align="center">float</td>
+<td align="center">0.15</td>
+<td>During the best-hit filter logic step of the pipeline, a nucleotide alignment is evaluated for the percent nucleotide variance a read (query) has compared to its reference (subject). The <code>--pid</code> value sets the maximum percent id variance allowable for a hit. Default is any hit with over 15% variance is considered <em>failed</em>.</td>
+</tr>
+<tr>
+<td align="center"><code>--pidprox</code></td>
+<td align="center">float</td>
+<td align="center">0.04</td>
+<td>During the best-hit filter logic step of the pipeline, secondary (non-best-hit) nucleotide alignments are evaluated for their percent nucleotide variance when compared to the best hit for a read. The <code>--pidprox</code> value sets the maximum percent id variance allowable for a secondary hit. Default is any secondary/proximal hit with over 4% variance is considered <em>failed</em>.</td>
+</tr>
+<tr>
+<td align="center"><code>--bsize</code></td>
+<td align="center">integer</td>
+<td align="center">1</td>
+<td>During the best-hit filter logic step of the pipeline, reads are evaluated in a read block based on alignments sorted by read id. The <code>--bsize</code> option sets the maximum buffer size (Gb) for sorting in memory, before an external sort buffers to disk. If the sort exceeds the <code>--bsize</code> limit, it will buffer to disk. As the sort size will almost always be larger than convential memory, we can enforce disk buffering by setting <code>--bsize</code> low, such as the default of 1 GB.</td>
+</tr>
+<tr>
+<td align="center"><code>--bitprox</code></td>
+<td align="center">integer</td>
+<td align="center">1</td>
+<td>During the best-hit filter logic step of the pipeline, secondary (non-best-hit) translated nucleotide alignments are evaluated for their bitscore when compared to the best hit for a read. The <code>--bitprox</code> value sets the maximum btiscore distance allowable for a secondary hit. Default is any secondary/proximal hit with a bitscore over 1 is considered <em>failed</em>.</td>
+</tr>
+<tr>
+<td align="center"><code>--mts</code></td>
+<td align="center">integer</td>
+<td align="center">5</td>
+<td>For translated nucleotide alignments, the maximum number of target sequences per read to report alignments. Reads are evaluated in a /read-block/ based on alignments sorted by read id. Default is top 5 alignments per read.</td>
+</tr>
+<tr>
+<td align="center"><code>--evalue</code></td>
+<td align="center">float</td>
+<td align="center">0.001</td>
+<td>For translated nucleotide alignments, the maximum expected value (e-value) to report an alignment. Default e-value is very conservative (0.001); increasing the e-value reports more questionable alignments.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="washington-university-specific-arguments">Washington University Specific Arguments</h3>
+
+<div class="notices warning" ><p>These options are only available to those running ViroMatch at Washington University School of Medicine through the <strong>compute1</strong> high performance computing server.</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--wustlconfig</code></td>
+<td align="center">file path</td>
+<td>Path to a YAML configuration file used for WUSTL LSF job parallel processing. Variables provided in this file are used for LSF job submission configuration. See <a href="https://twylie.github.io/viromatch/overview/file_types/#wustlconfig-file">Wustlconfig File</a> for more details on configuration file format.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/viromatch/execution/cli_docker/" title="Command Line Docker"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/viromatch/overview/" title="Pipeline Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/viromatch/js/clipboard.min.js?1606160050"></script>
+    <script src="/viromatch/js/perfect-scrollbar.min.js?1606160050"></script>
+    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1606160050"></script>
+    <script src="/viromatch/js/jquery.sticky.js?1606160050"></script>
+    <script src="/viromatch/js/featherlight.min.js?1606160050"></script>
+    <script src="/viromatch/js/highlight.pack.js?1606160050"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1606160050"></script>
+    <script src="/viromatch/js/learn.js?1606160050"></script>
+    <script src="/viromatch/js/hugo-learn.js?1606160050"></script>
+    
+    
+
+  </body>
+</html>

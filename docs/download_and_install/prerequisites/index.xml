@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prerequisites on ViroMatch</title>
+    <link>https://twylie.github.io/viromatch/download_and_install/prerequisites/</link>
+    <description>Recent content in Prerequisites on ViroMatch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Nov 2020 22:36:09 -0600</lastBuildDate>
+    
+	<atom:link href="https://twylie.github.io/viromatch/download_and_install/prerequisites/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

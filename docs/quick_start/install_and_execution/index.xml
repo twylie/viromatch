@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation and Pipeline Execution on ViroMatch</title>
+    <link>https://twylie.github.io/viromatch/quick_start/install_and_execution/</link>
+    <description>Recent content in Installation and Pipeline Execution on ViroMatch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Nov 2020 21:53:53 -0600</lastBuildDate>
+    
+	<atom:link href="https://twylie.github.io/viromatch/quick_start/install_and_execution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

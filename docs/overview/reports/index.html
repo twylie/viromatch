@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="description" content="ViroMatch: Viral Sequence Identification">
+<meta name="author" content="T.N. Wylie">
+
+    <link rel="icon" href="/viromatch/images/favicon.png" type="image/png">
+
+    <title>Reports and Output Files :: ViroMatch</title>
+
+    
+    <link href="/viromatch/css/nucleus.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/fontawesome-all.min.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/hybrid.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/featherlight.min.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/perfect-scrollbar.min.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/auto-complete.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/atom-one-dark-reasonable.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/theme.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/hugo-theme.css?1606160050" rel="stylesheet">
+    
+    <link href="/viromatch/css/theme-red.css?1606160050" rel="stylesheet">
+    
+    
+
+    <script src="/viromatch/js/jquery-3.3.1.min.js?1606160050"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/viromatch/overview/reports/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/viromatch/'>
+
+
+
+
+<svg version="1.1" width="200" height="50" viewBox="0 0 1100 250" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+  <g
+     id="layer1">
+    <g
+       id="g123">
+      <g
+         id="g486"
+         transform="matrix(8.8574711,0,0,8.242622,15.277146,-8.3433826)"
+         style="fill:#ffffff">
+        <g
+           id="g430"
+           style="fill:#ffffff">
+          <path
+             style="fill:#ffffff"
+             d="m 31.917,17.595 c -0.911,-0.691 -2.213,-0.519 -2.91,0.396 -0.066,0.093 -0.12,0.19 -0.174,0.285 l -5.095,-0.863 c 0.048,-0.353 0.08,-0.709 0.08,-1.075 0,-1.481 -0.412,-2.863 -1.118,-4.053 l 3.248,-2.101 c 0.207,0.14 0.46,0.216 0.728,0.191 0.618,-0.057 1.072,-0.599 1.018,-1.221 -0.056,-0.618 -0.603,-1.071 -1.221,-1.016 -0.618,0.055 -1.071,0.603 -1.017,1.221 0.005,0.062 0.021,0.117 0.033,0.178 L 22.262,11.62 C 21.618,10.75 20.808,10.016 19.869,9.469 l 2.318,-3.662 c 0.247,0.04 0.509,0.003 0.742,-0.132 0.536,-0.312 0.722,-0.996 0.409,-1.532 -0.311,-0.539 -0.997,-0.725 -1.534,-0.413 -0.536,0.311 -0.721,0.997 -0.41,1.536 0.03,0.053 0.064,0.099 0.104,0.146 L 19.163,9.099 C 18.373,8.738 17.518,8.495 16.616,8.41 L 17.09,5.61 C 17.272,5.566 17.44,5.475 17.56,5.319 17.834,4.955 17.767,4.438 17.404,4.164 17.041,3.886 16.523,3.957 16.247,4.319 15.973,4.681 16.042,5.2 16.403,5.475 16.438,5.498 16.479,5.507 16.515,5.53 L 16.031,8.383 C 15.97,8.381 15.912,8.374 15.852,8.374 c -1.034,0 -2.019,0.202 -2.922,0.562 L 10.695,4.83 C 10.912,4.555 11.045,4.211 11.039,3.833 11.025,2.96 10.31,2.263 9.437,2.281 8.567,2.295 7.873,3.01 7.886,3.882 7.899,4.752 8.615,5.444 9.487,5.432 9.574,5.43 9.657,5.415 9.74,5.402 l 2.184,4.012 C 10.832,10.031 9.9,10.902 9.209,11.944 L 5.946,9.384 C 6.011,9.145 5.999,8.881 5.891,8.635 5.636,8.07 4.973,7.817 4.407,8.072 3.839,8.326 3.587,8.991 3.841,9.558 c 0.257,0.564 0.921,0.816 1.487,0.562 0.055,-0.026 0.105,-0.06 0.155,-0.092 l 3.316,2.607 c -0.49,0.937 -0.8,1.982 -0.884,3.096 L 3.02,15.722 C 2.883,15.4 2.644,15.117 2.311,14.943 1.54,14.536 0.584,14.83 0.181,15.602 c -0.405,0.771 -0.109,1.725 0.659,2.129 0.771,0.408 1.726,0.11 2.132,-0.661 0.041,-0.075 0.067,-0.153 0.095,-0.234 l 4.845,0.012 c 0.04,0.631 0.146,1.247 0.325,1.833 L 5.106,19.887 C 4.933,19.708 4.699,19.584 4.431,19.552 3.815,19.482 3.26,19.924 3.189,20.538 c -0.071,0.616 0.37,1.178 0.988,1.246 0.615,0.069 1.171,-0.374 1.241,-0.989 0.006,-0.061 0.005,-0.117 0.004,-0.182 l 3.084,-1.188 c 0.611,1.449 1.641,2.683 2.937,3.542 L 9.931,24.528 C 9.698,24.439 9.434,24.422 9.179,24.506 8.587,24.703 8.27,25.337 8.463,25.923 c 0.193,0.59 0.83,0.913 1.418,0.722 0.59,-0.198 0.908,-0.833 0.717,-1.424 -0.021,-0.058 -0.045,-0.11 -0.072,-0.167 l 1.619,-1.67 c 0.771,0.407 1.617,0.687 2.512,0.819 l -0.431,4.041 c -0.244,0.056 -0.473,0.192 -0.639,0.401 -0.38,0.491 -0.292,1.193 0.2,1.577 0.492,0.381 1.197,0.289 1.578,-0.201 0.379,-0.492 0.288,-1.195 -0.203,-1.578 -0.048,-0.033 -0.099,-0.062 -0.149,-0.093 l 0.433,-4.068 c 0.136,0.009 0.27,0.021 0.408,0.021 1.035,0 2.021,-0.203 2.93,-0.562 l 0.804,3.58 c -0.201,0.146 -0.36,0.354 -0.431,0.615 -0.16,0.6 0.193,1.215 0.794,1.376 0.599,0.157 1.216,-0.193 1.376,-0.795 0.16,-0.601 -0.196,-1.215 -0.796,-1.376 -0.059,-0.016 -0.117,-0.022 -0.178,-0.029 l -0.832,-3.706 c 0.579,-0.301 1.111,-0.671 1.597,-1.103 l 1.102,1.552 c -0.099,0.156 -0.15,0.338 -0.125,0.537 0.061,0.448 0.477,0.766 0.929,0.708 0.453,-0.063 0.768,-0.479 0.708,-0.93 -0.062,-0.453 -0.479,-0.768 -0.931,-0.707 -0.042,0.006 -0.075,0.028 -0.115,0.04 l -1.137,-1.602 c 0.838,-0.854 1.479,-1.896 1.864,-3.062 l 5.241,0.891 c 0.108,0.451 0.356,0.869 0.751,1.168 0.913,0.693 2.216,0.52 2.911,-0.395 0.692,-0.911 0.514,-2.213 -0.399,-2.908 z m -18.54,-1.626 c -0.655,0 -1.19,-0.534 -1.19,-1.194 0,-0.657 0.535,-1.188 1.19,-1.188 0.658,0 1.192,0.53 1.192,1.188 0,0.659 -0.533,1.194 -1.192,1.194 z m 3.071,2.588 c -0.482,0 -0.874,-0.392 -0.874,-0.873 0,-0.486 0.392,-0.875 0.874,-0.875 0.483,0 0.875,0.388 0.875,0.875 -0.001,0.484 -0.392,0.873 -0.875,0.873 z m 3.246,-3.703 c -0.712,0 -1.289,-0.577 -1.289,-1.287 0,-0.715 0.577,-1.293 1.289,-1.293 0.712,0 1.29,0.578 1.29,1.293 0,0.71 -0.577,1.287 -1.29,1.287 z"
+             id="path428" />
+        </g>
+        <g
+           id="g432"
+           style="fill:#ffffff" />
+        <g
+           id="g434"
+           style="fill:#ffffff" />
+        <g
+           id="g436"
+           style="fill:#ffffff" />
+        <g
+           id="g438"
+           style="fill:#ffffff" />
+        <g
+           id="g440"
+           style="fill:#ffffff" />
+        <g
+           id="g442"
+           style="fill:#ffffff" />
+        <g
+           id="g444"
+           style="fill:#ffffff" />
+        <g
+           id="g446"
+           style="fill:#ffffff" />
+        <g
+           id="g448"
+           style="fill:#ffffff" />
+        <g
+           id="g450"
+           style="fill:#ffffff" />
+        <g
+           id="g452"
+           style="fill:#ffffff" />
+        <g
+           id="g454"
+           style="fill:#ffffff" />
+        <g
+           id="g456"
+           style="fill:#ffffff" />
+        <g
+           id="g458"
+           style="fill:#ffffff" />
+        <g
+           id="g460"
+           style="fill:#ffffff" />
+      </g>
+ <text x="331.8631" y="182.52051" fill="#FFFF" font-family="sans-serif" font-size="149.93px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="331.8631" y="182.52051" fill="#FFFFFF" font-family="'Novacento Sans Wide'" font-size="149.93px" stroke-width=".26458">ViroMatch</tspan></text>
+</svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/viromatch/js/lunr.min.js?1606160050"></script>
+<script type="text/javascript" src="/viromatch/js/auto-complete.js?1606160050"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/twylie.github.io\/viromatch\/";
+    
+</script>
+<script type="text/javascript" src="/viromatch/js/search.js?1606160050"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/viromatch/'><i class='fas fa-home'></i>&nbsp;Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/quick_start/" title="Quick Start" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/quick_start/">
+          <b>1. </b>Quick Start
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/quick_start/install_and_execution/" title="Installation and Pipeline Execution" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/quick_start/install_and_execution/">
+          Installation and Pipeline Execution
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/" title="Download and Installation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/">
+          <b>2. </b>Download and Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/prerequisites/" title="Prerequisites" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/prerequisites/">
+          Prerequisites
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/docker/" title="Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/docker/">
+          Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/download_viromatch/" title="Download ViroMatch" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/download_viromatch/">
+          Download ViroMatch
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/databases/" title="Databases" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/databases/">
+          Databases
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/" title="Running ViroMatch" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/">
+          <b>3. </b>Running ViroMatch
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/mapping_volumes/" title="Mapping Docker Volumes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/mapping_volumes/">
+          Mapping Docker Volumes
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/interactive_docker/" title="Interactive Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/interactive_docker/">
+          Interactive Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/cli_docker/" title="Command Line Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/cli_docker/">
+          Command Line Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/cli_args/" title="Command Line Arguments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/cli_args/">
+          Command Line Arguments
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/" title="Pipeline Overview" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/viromatch/overview/">
+          <b>4. </b>Pipeline Overview
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/summary/" title="Pipeline Summary" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/summary/">
+          Pipeline Summary
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/snakemake/" title="Snakemake" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/snakemake/">
+          Snakemake
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/steps/" title="Steps in the Pipeline" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/steps/">
+          Steps in the Pipeline
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/tools/" title="Third-Party Tools" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/tools/">
+          Third-Party Tools
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/file_types/" title="Input File Types" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/file_types/">
+          Input File Types
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/best_hit_logic/" title="Best Hit Logic" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/best_hit_logic/">
+          Best Hit Logic
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/reports/" title="Reports and Output Files" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/viromatch/overview/reports/">
+          Reports and Output Files
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/" title="Project Info" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/">
+          <b>5. </b>Project Info
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/version/" title="Version" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/version/">
+          Version
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/authors/" title="Authors" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/authors/">
+          Authors
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/license/" title="License" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/license/">
+          License
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/funding/" title="Funding" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/funding/">
+          Funding
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/disclaimer/" title="Disclaimer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/disclaimer/">
+          Disclaimer
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+<p><u>Funding</u>: NIH CTSA UL1TR002345, NIH 1R01HD095986</p>
+
+<br>
+
+<p><u>Disclaimer</u>: This resource is intended for purely research purposes. It should not be used for emergencies or medical or professional advice.</p>
+
+<br>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/80x15.png" /></a><br />Site content licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>. Copyright (C) 2019&mdash;2020 T.N. Wylie and K.M. Wylie.</P>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/viromatch/'>Home</a> > <a href='/viromatch/overview/'>Pipeline Overview</a> > Reports and Output Files
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#top-level-structure">Top-Level Structure</a></li>
+    <li><a href="#the-viromatch_results-directory">The viromatch_results/ Directory</a></li>
+    <li><a href="#sanity-files">Sanity Files</a>
+      <ul>
+        <li><a href="#sanity-examples">Sanity Examples</a></li>
+        <li><a href="#failure-codes">Failure Codes</a></li>
+      </ul>
+    </li>
+    <li><a href="#taxonomyquantification-reports">Taxonomy/Quantification Reports</a>
+      <ul>
+        <li><a href="#nucleotide-counts">Nucleotide Counts</a></li>
+        <li><a href="#translated-nucleotide-counts">Translated Nucleotide Counts</a></li>
+        <li><a href="#ambiguous-counts">Ambiguous Counts</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Reports and Output Files
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="top-level-structure">Top-Level Structure</h2>
+<p>When the ViroMatch pipeline finishes, all output will be in the directory specified by the <code>--output</code> argument. Contents of this area will look like the following.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">CONFIG.yaml
+REPORT.nuc_ambiguous_counts.txt
+REPORT.nuc_counts.txt
+REPORT.trans_nuc_ambiguous_counts.txt
+REPORT.trans_nuc_counts.txt
+Snakefile
+cmd.sh
+stats.log
+steps.txt
+viromatch_results/
+</code></pre></div><p>Here is a breakdown of this area.</p>
+<table>
+<thead>
+<tr>
+<th align="center">File/Directory</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">.snakemake</td>
+<td align="left">This directory contains information written by Snakemake during its execution.</td>
+</tr>
+<tr>
+<td align="center">CONFIG.yaml</td>
+<td align="left">This file contains all of the configuration information required to run ViroMatch and is used directly by Snakmake to execute the pipeline. Command line parameters are captured here.</td>
+</tr>
+<tr>
+<td align="center">REPORT.nuc_ambiguous_counts.txt</td>
+<td align="left">Final virus read counts and taxonomy based on nucleotide reference mappings. <a href="https://twylie.github.io/viromatch/overview/reports/#ambiguous-counts">See below for detailed explanation.</a></td>
+</tr>
+<tr>
+<td align="center">REPORT.nuc_counts.txt</td>
+<td align="left">Final virus read counts and taxonomy based on translated nucleotide reference mappings. <a href="https://twylie.github.io/viromatch/overview/reports/#nucleotide-counts">See below for detailed explanation.</a></td>
+</tr>
+<tr>
+<td align="center">REPORT.trans_nuc_ambiguous_counts.txt</td>
+<td align="left">Rejected hits/taxonomy based on nucleotide reference mappings. <a href="https://twylie.github.io/viromatch/overview/reports/#ambiguous-counts">See below for detailed explanation</a></td>
+</tr>
+<tr>
+<td align="center">REPORT.trans_nuc_counts.txt</td>
+<td align="left">Rejected hits/taxonomy based on translated nucleotide reference mappings. <a href="https://twylie.github.io/viromatch/overview/reports/#translated-nucleotide-counts">See below for detailed explanation.</a></td>
+</tr>
+<tr>
+<td align="center">Snakefile</td>
+<td align="left">The Snakemake file that executes the steps in the ViroMatch pipeline. Can also be executed using Snakemake directly.</td>
+</tr>
+<tr>
+<td align="center">cmd.sh</td>
+<td align="left">The shell script that ViroMatch uses to automatically execute the Snakemake pipeline.</td>
+</tr>
+<tr>
+<td align="center">stats.log</td>
+<td align="left">Upon completion of the pipeline, Snakemake will write a benchmark file outlining runtime per pipeline step.</td>
+</tr>
+<tr>
+<td align="center">steps.txt</td>
+<td align="left">The rules (steps) in the pipeline, as executed by Snakemake.</td>
+</tr>
+<tr>
+<td align="center">viromatch_results/</td>
+<td align="left">This directory contains all of the ancillary directories and files ViroMatch writes during pipeline processing.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-viromatch_results-directory">The viromatch_results/ Directory</h2>
+<p>This directory contains all of the ancillary directories and files ViroMatch writes during pipeline processing. Each rule (step) in the pipeline will have its own directory written here. The directory strucuture of a successful run will looks as follows.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">viromatch_results/.viromatch/
+viromatch_results/blank_eval_filter_low_complexity/
+viromatch_results/blank_eval_validate_trans_nuc_nr/
+viromatch_results/blank_eval_viral_trans_nuc/
+viromatch_results/copy_nuc_ambiguous_report/
+viromatch_results/copy_nuc_nt_report/
+viromatch_results/copy_trans_nuc_ambiguous_report/
+viromatch_results/copy_trans_nuc_nr_report/
+viromatch_results/filter_low_complexity_fastq_files/
+viromatch_results/host_screen_mapping/
+viromatch_results/host_screen_write_unmapped_bam/
+viromatch_results/host_screen_write_unmapped_fastq/
+viromatch_results/nuc_nt_best_hit_count_prep/
+viromatch_results/nuc_nt_best_hit_counts/
+viromatch_results/nuc_nt_best_hit_filter_sam/
+viromatch_results/nuc_nt_otherseq_hit_report/
+viromatch_results/nuc_nt_unknown_hit_report/
+viromatch_results/prep_fastq_files/
+viromatch_results/trans_nuc_nr_best_hit_count_prep/
+viromatch_results/trans_nuc_nr_best_hit_counts/
+viromatch_results/trans_nuc_nr_best_hit_filter_tsv/
+viromatch_results/trans_nuc_nr_otherseq_hit_report/
+viromatch_results/trans_nuc_nr_unknown_hit_report/
+viromatch_results/trim_fastq_files/
+viromatch_results/validate_nuc_nt_mapping/
+viromatch_results/validate_nuc_nt_merge_r1_mapped_sam/
+viromatch_results/validate_nuc_nt_merge_r2_mapped_sam/
+viromatch_results/validate_nuc_nt_write_mapped_sam/
+viromatch_results/validate_nuc_nt_write_merged_unmapped_fastq/
+viromatch_results/validate_nuc_nt_write_r1_unmapped_ids/
+viromatch_results/validate_nuc_nt_write_r2_unmapped_ids/
+viromatch_results/validate_nuc_nt_write_unmapped_sam/
+viromatch_results/validate_trans_nuc_nr_mapping/
+viromatch_results/validate_trans_nuc_nr_mapping_daa_to_tsv/
+viromatch_results/validate_trans_nuc_nr_merge_r1_mapped_tsv/
+viromatch_results/validate_trans_nuc_nr_merge_r2_mapped_tsv/
+viromatch_results/viral_mapped_fastq_merge/
+viromatch_results/viral_nuc_mapping/
+viromatch_results/viral_nuc_write_mapped_bam/
+viromatch_results/viral_nuc_write_mapped_fastq/
+viromatch_results/viral_nuc_write_unmapped_bam/
+viromatch_results/viral_nuc_write_unmapped_fastq/
+viromatch_results/viral_trans_nuc_daa_to_tsv/
+viromatch_results/viral_trans_nuc_extract_mapped_ids/
+viromatch_results/viral_trans_nuc_mapping/
+viromatch_results/viral_trans_nuc_write_mapped_fastq/
+</code></pre></div>
+<div class="notices tip" ><p>ViroMatch writes several internal files in the <code>.viromatch</code> directory during processing. Information collected here includes benchmark files for individual steps and log files for steps that run executables that generate their own output.</p>
+</div>
+
+<p>As ViroMatch progresses through pipeline execution, each step will create an underlying directory based on the step&rsquo;s name and processing specific to the step will occur in this area. For example, if we wanted to see the exact commands related to the <code>viral_nuc_mapping</code> step, we would look in the <code>viromatch_results/viral_nuc_mapping/</code> directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">viromatch_results/viral_nuc_mapping/INPUT.r1.viral.sam.cmd
+viromatch_results/viral_nuc_mapping/INPUT.r2.viral.sam.cmd
+</code></pre></div><p>There are two shell scripts, one for R1 reads and another for R2 reads, that run the specific commands to align FASTQ to the viral nucleotide reference database using BWA-MEM.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat viromatch_results/viral_nuc_mapping/INPUT.r1.viral.sam.cmd
+</code></pre></div><p>Results:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">bwa mem /viralfna/2014_12_29_complete_viral_genomes.fasta viromatch_results/host_screen_write_unmapped_fastq/INPUT.r1.host.unmapped.fastq &gt; viromatch_results/viral_nuc_mapping/INPUT.r1.viral.sam 2&gt; viromatch_results/.viromatch/log/INPUT.r1.viral.sam.log
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat viromatch_results/viral_nuc_mapping/INPUT.r2.viral.sam.cmd
+</code></pre></div><p>Results:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">bwa mem /viralfna/2014_12_29_complete_viral_genomes.fasta viromatch_results/host_screen_write_unmapped_fastq/INPUT.r2.host.unmapped.fastq &gt; viromatch_results/viral_nuc_mapping/INPUT.r2.viral.sam 2&gt; viromatch_results/.viromatch/log/INPUT.r2.viral.sam.log
+</code></pre></div><p>All ViroMatch processing is done by Snakemake executing individual shell scripts along the pipeline. Therefore, it is relatively easy to see exactly what commands are being run throughout the pipeline. Once a run is finished, you can list all of the underlying shell scripts with the following command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find viromatch_results/* -type f | grep <span style="color:#e6db74">&#39;.cmd$&#39;</span>
+</code></pre></div><p>To see the order of execution for the shell commands, you will just need to look at the Snakemake log files that were generated during pipeline execution.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls .snakemake/log/*
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">.snakemake/log/2020-10-27T183639.808528.snakemake.log
+.snakemake/log/2020-10-27T183640.109481.snakemake.log
+</code></pre></div><p>One of the logs simply lists the rules/steps in the pipeline in order of execution defined by Snakemake, the other log is written during actual pipeline line execution. You will see the order of execution here for each rule, the associated directory being writte under <code>viromatch_results/</code>, input and output files for the rule, and the specific shell script being used for execution.</p>
+<h2 id="sanity-files">Sanity Files</h2>
+
+<div class="notices warning" ><p>By deafult, ViroMatch removes temporary files generated during execution when they are no longer needed for downstream processing. This is done to save disk space, as many of the temporary files can be large in size. Therefore, not all of the files generated during processing will be under <code>viromatch_results/</code> unless the user specifies the <code>--keep</code> argument when executing the pipeline.</p>
+</div>
+
+<p>Using the <code>--keep</code> switch when executing the pipeline retains <em>all</em> of the files generated during processing. There are several useful &ldquo;sanity&rdquo; files that are generated within the pipeline , but be warned they can be very large in size!</p>
+<p>While retaining all of the pipeline files provides additional information for every command executed in the pipeline, some files are more important than others in reviewing pipeline decisions. Of particular interest are the pass/fail sanity files. These files provide the pass/fail status for every read evaluated in the pipeline, including the reason why a read might fail. While the read count report files provide viral hit/taxonomy counts, the pass/fail sanity files provide information on why or why not a read was counted.</p>
+<p>The pass/fail sanity files are located here.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">viromatch_results/nuc_nt_best_hit_filter_sam/INPUT.r1.validate.nuc.mapped.filter.pass.sam.log
+viromatch_results/nuc_nt_best_hit_filter_sam/INPUT.r1.validate.nuc.mapped.filter.pass.sam.log.unknown
+viromatch_results/nuc_nt_best_hit_filter_sam/INPUT.r1.validate.nuc.mapped.filter.pass.sam.log.otherseq
+
+viromatch_results/nuc_nt_best_hit_filter_sam/INPUT.r2.validate.nuc.mapped.filter.pass.sam.log
+viromatch_results/nuc_nt_best_hit_filter_sam/INPUT.r2.validate.nuc.mapped.filter.pass.sam.log.unknown
+viromatch_results/nuc_nt_best_hit_filter_sam/INPUT.r2.validate.nuc.mapped.filter.pass.sam.log.otherseq
+
+viromatch_results/trans_nuc_nr_best_hit_filter_tsv/INPUT.r1.validate.trans.nuc.mapped.filter.pass.tsv.log
+viromatch_results/trans_nuc_nr_best_hit_filter_tsv/INPUT.r1.validate.trans.nuc.mapped.filter.pass.tsv.log.unknown
+viromatch_results/trans_nuc_nr_best_hit_filter_tsv/INPUT.r1.validate.trans.nuc.mapped.filter.pass.tsv.log.otherseq
+
+viromatch_results/trans_nuc_nr_best_hit_filter_tsv/INPUT.r2.validate.trans.nuc.mapped.filter.pass.tsv.log
+viromatch_results/trans_nuc_nr_best_hit_filter_tsv/INPUT.r2.validate.trans.nuc.mapped.filter.pass.tsv.log.unknown
+viromatch_results/trans_nuc_nr_best_hit_filter_tsv/INPUT.r2.validate.trans.nuc.mapped.filter.pass.tsv.log.otherseq
+</code></pre></div><p>There are sanity files for both nucleotide mapping and translated nucleotide mapping, both broken down into R1 and R2 reads.</p>
+<p>The <code>*.unknown</code> and <code>*.otherseq</code> sanity files partition ambiguous hits that have been removed from consideration. See <a href="https://twylie.github.io/viromatch/overview/reports/#ambiguous-counts">Ambiguous Counts</a> for more details.</p>
+<h3 id="sanity-examples">Sanity Examples</h3>
+<p>Using <code>INPUT.r1.validate.nuc.mapped.filter.pass.sam.log</code> as an example, the associated fields in the file are as follows.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">pass/fail</td>
+<td>Pass/fail status for the hit. If passed, the read/hit was counted as a viral identity.</td>
+</tr>
+<tr>
+<td align="center">code</td>
+<td>Discrete pass/fail code, associated with the best hit logic in the pipeline.</td>
+</tr>
+<tr>
+<td align="center">read block size</td>
+<td>How many hits per read were considered for the read.</td>
+</tr>
+<tr>
+<td align="center">read id</td>
+<td>Associated sequence id for the read (from uBAM or FASTQ files).</td>
+</tr>
+<tr>
+<td align="center">comment</td>
+<td>Comment related to the pass/fail status.</td>
+</tr>
+<tr>
+<td align="center">pid</td>
+<td>Percent identity variance of the read (query) as compared to the reference hit (subject).</td>
+</tr>
+<tr>
+<td align="center">acc id</td>
+<td>Accession id of the reference hit.</td>
+</tr>
+<tr>
+<td align="center">species</td>
+<td>Species of the reference hit.</td>
+</tr>
+<tr>
+<td align="center">lineage</td>
+<td>Full lineage of the reference hit.</td>
+</tr>
+</tbody>
+</table>
+<p>An example of a single failed hit.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">pass/fail</td>
+<td>FAIL</td>
+</tr>
+<tr>
+<td align="center">code</td>
+<td>TIED BEST HIT</td>
+</tr>
+<tr>
+<td align="center">read block size</td>
+<td>2</td>
+</tr>
+<tr>
+<td align="center">read id</td>
+<td>D00170:57:CA2R8ANXX:4:2315:8200:2670</td>
+</tr>
+<tr>
+<td align="center">comment</td>
+<td>failed best hit (tied)</td>
+</tr>
+<tr>
+<td align="center">pid</td>
+<td>0.0397</td>
+</tr>
+<tr>
+<td align="center">acc id</td>
+<td>KF294862.1</td>
+</tr>
+<tr>
+<td align="center">species</td>
+<td>Gyrovirus Tu789</td>
+</tr>
+<tr>
+<td align="center">lineage</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; Gyrovirus &ndash;&gt; unclassified Gyrovirus &ndash;&gt; Gyrovirus Tu789</td>
+</tr>
+</tbody>
+</table>
+<p>In the above example, the sequence read <code>D00170:57:CA2R8ANXX:4:2315:8200:2670</code> had a hit to the <code>KF294862.1</code> reference genome (Gyrovirus Tu789) with 3.97% variance. While this is an acceptable hit &mdash; e.g. hits a known virus with acceptable percent identity &mdash; there are 2 hits associated with this read. The other hit also was equally acceptable. In such cases, when hits are equivalent, the pipeline randomly chooses the best hit. As indicated, this hit was (randomly) failed and the other hit was the best hit for the read.</p>
+<p>Let&rsquo;s look at a more complicated example. Here is a read block (i.e. all the hits being evaluated for a single read).</p>
+<table>
+<thead>
+<tr>
+<th align="center">Pass/Fail</th>
+<th align="center">Code</th>
+<th align="center">Read Block Size</th>
+<th align="center">Read ID</th>
+<th align="center">Comment</th>
+<th align="center">PIDV</th>
+<th align="center">Accc ID</th>
+<th>Species</th>
+<th>Lineage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">PASS</td>
+<td align="center">BEST HIT</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">best hit</td>
+<td align="center">0.0066</td>
+<td align="center">MH648893.1</td>
+<td>Anelloviridae sp.</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; Anelloviridae sp.</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">NEIGHBOR</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">viral neighbor hit</td>
+<td align="center">0.0199</td>
+<td align="center">KM593803.2</td>
+<td>SEN virus</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; SEN virus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">SECONDARY NN</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">secondary, non-neighbor hit</td>
+<td align="center">0.0993</td>
+<td align="center">FM882010.1</td>
+<td>Torque teno virus</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; Torque teno virus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">SECONDARY NN</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">secondary, non-neighbor hit</td>
+<td align="center">0.1523</td>
+<td align="center">AY206683.1</td>
+<td>SEN virus</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; SEN virus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">SECONDARY NN</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">secondary, non-neighbor hit</td>
+<td align="center">0.2914</td>
+<td align="center">AB059353.1</td>
+<td>SEN virus</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; SEN virus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">SECONDARY NN</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">secondary, non-neighbor hit</td>
+<td align="center">0.5497</td>
+<td align="center">GQ179972.1</td>
+<td>SEN virus</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; SEN virus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">SECONDARY NN</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">secondary, non-neighbor hit</td>
+<td align="center">0.5686</td>
+<td align="center">MK820646.1</td>
+<td>Torque teno virus</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; Torque teno virus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">SECONDARY NN</td>
+<td align="center">8</td>
+<td align="center">A00584:317:HG3LNDSXY:4:1404:2465:7639</td>
+<td align="center">secondary, non-neighbor hit</td>
+<td align="center">0.6291</td>
+<td align="center">AB856070.1</td>
+<td>SEN virus</td>
+<td>Viruses &ndash;&gt; Anelloviridae &ndash;&gt; unclassified Anelloviridae &ndash;&gt; SEN virus</td>
+</tr>
+</tbody>
+</table>
+<p>There are 8 total hits for the read, all hitting viral taxonomy; therefore, the best hit is chosen based on the best percent identity variance (pidv) value (0.0066 for <code>MH648893.1</code>). Note, the second best hit has a pidv value of 0.0199 to a viral identity, within the the default <code>--pidprox</code> value of 0.04 for &ldquo;neighbor&rdquo; status, so the failure code is labeled <code>NEIGHBOR</code>. The other viral hits are too distant from the <code>--pidprox</code> value, so their failure codes are <code>SECONDARY NN</code> for secondary, non-neighbor hits.</p>
+<p>In the next example, we have a read block with 13 total hits.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Pass/Fail</th>
+<th align="center">Code</th>
+<th align="center">Read Block Size</th>
+<th align="center">Read ID</th>
+<th align="center">Comment</th>
+<th align="center">PIDV</th>
+<th align="center">Accc ID</th>
+<th>Species</th>
+<th>Lineage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.007</td>
+<td align="center">LT908445.1</td>
+<td>Spodoptera aff. frugiperda 2 RZ-2014</td>
+<td>cellular organisms &ndash;&gt; Eukaryota &ndash;&gt; Opisthokonta &ndash;&gt; Metazoa &ndash;&gt; Eumetazoa &ndash;&gt; Bilateria &ndash;&gt; Protostomia &ndash;&gt; Ecdysozoa &ndash;&gt; Panarthropoda &ndash;&gt; Arthropoda &ndash;&gt; Mandibulata &ndash;&gt; Pancrustacea &ndash;&gt; Hexapoda &ndash;&gt; Insecta &ndash;&gt; Dicondylia &ndash;&gt; Pterygota &ndash;&gt; Neoptera &ndash;&gt; Holometabola &ndash;&gt; Amphiesmenoptera &ndash;&gt; Lepidoptera &ndash;&gt; Glossata &ndash;&gt; Neolepidoptera &ndash;&gt; Heteroneura &ndash;&gt; Ditrysia &ndash;&gt; Obtectomera &ndash;&gt; Noctuoidea &ndash;&gt; Noctuidae &ndash;&gt; Amphipyrinae &ndash;&gt; Spodoptera &ndash;&gt; Spodoptera aff. frugiperda 2 RZ-2014</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.007</td>
+<td align="center">M63414.1</td>
+<td>Orgyia pseudotsugata single capsid nuclopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; unclassified Alphabaculovirus &ndash;&gt; Orgyia pseudotsugata single capsid nuclopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.007</td>
+<td align="center">U75930.2</td>
+<td>Orgyia pseudotsugata multiple nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Orgyia pseudotsugata multiple nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.0141</td>
+<td align="center">KP747440.1</td>
+<td>Dasychira pudibunda nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Dasychira pudibunda nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.4859</td>
+<td align="center">EF207986.1</td>
+<td>Antheraea pernyi nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Antheraea pernyi nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.4859</td>
+<td align="center">KY979487.1</td>
+<td>Antheraea pernyi nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Antheraea pernyi nucleopolyhedrovirus &ndash;&gt; Antheraea proylei nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.4859</td>
+<td align="center">LC194889.1</td>
+<td>Antheraea pernyi nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Antheraea pernyi nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.4859</td>
+<td align="center">LC375537.1</td>
+<td>Antheraea yamamai nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; unclassified Baculoviridae &ndash;&gt; Antheraea yamamai nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.4859</td>
+<td align="center">MH797002.1</td>
+<td>Antheraea pernyi nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Antheraea pernyi nucleopolyhedrovirus &ndash;&gt; Antheraea proylei nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.6831</td>
+<td align="center">KJ631623.1</td>
+<td>Condylorrhiza vestigialis MNPV</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; unclassified Alphabaculovirus &ndash;&gt; Condylorrhiza vestigialis MNPV</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.7746</td>
+<td align="center">AF368905.1</td>
+<td>Anticarsia gemmatalis nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; unclassified Alphabaculovirus &ndash;&gt; Anticarsia gemmatalis nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.7746</td>
+<td align="center">DQ813662.2</td>
+<td>Anticarsia gemmatalis multiple nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Anticarsia gemmatalis multiple nucleopolyhedrovirus</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">13</td>
+<td align="center">A00584:317:HG3LNDSXY:4:2646:2248:14935</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td align="center">0.7746</td>
+<td align="center">MG746625.1</td>
+<td>Anticarsia gemmatalis multiple nucleopolyhedrovirus</td>
+<td>Viruses &ndash;&gt; Baculoviridae &ndash;&gt; Alphabaculovirus &ndash;&gt; Anticarsia gemmatalis multiple nucleopolyhedrovirus</td>
+</tr>
+</tbody>
+</table>
+<p>The hits above are a mixture of viral and non-viral identities. We have a tie for best pidv, namely 0.007 for hits to <code>LT908445.1</code>, <code>M63414.1</code>, and <code>U75930.2</code>. The <code>LT908445.1</code> hit is to a non-viral species, therefore the entire read block is failed and the failure code <code>RB AMBIGUITY</code> for significant ambiguous, non-viral hit is applied to all of the hits.</p>
+<p>The above examples walk through some of the failure codes encountered in the sanity files. See the <a href="https://twylie.github.io/viromatch/overview/reports/#failure-codes">Failure Codes</a> section below for details regarding other hit failures.</p>
+<h3 id="failure-codes">Failure Codes</h3>
+<p>All possible pass/failure codes for the best hit logic portion of the pipeline are outlined below.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Pass/Fail Status</th>
+<th align="center">Code</th>
+<th align="center">Comment</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">NEIGHBOR</td>
+<td align="center">viral neighbor hit</td>
+<td>The hit was viral in nature, the score was within the <code>--pidprox</code> or <code>--bitprox</code> value range, but another viral hit was chosen based on a better score.</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB AMBIGUITY</td>
+<td align="center">significant ambiguous, non-viral hit</td>
+<td>If the best hits (or any neighbor hits within the <code>--pidprox</code> or <code>--bitprox</code> value range) are not viruses, we fail the entire read block.</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">RB PID</td>
+<td align="center">best score X is &gt; Y</td>
+<td>The best score in the read block is greater than the <code>--pid</code> value; we fail the entire read block. Specific to nucleotide alignments.</td>
+</tr>
+<tr>
+<td align="center">FAIL</td>
+<td align="center">SECONDARY NN</td>
+<td align="center">secondary, non-neighbor hit</td>
+<td>The hit is failed because it is greater than the <code>--pidprox</code> or <code>--bitprox</code> value.</td>
+</tr>
+<tr>
+<td align="center">FAILED</td>
+<td align="center">TIED BEST HIT</td>
+<td align="center">failed best hit (tied)</td>
+<td>The hit is viral and was tied for the best hit, but was not chosen during the random best hit selection.</td>
+</tr>
+<tr>
+<td align="center">IGNORED</td>
+<td align="center">OTHER SEQ</td>
+<td align="center">taxonomy matches &lsquo;other sequences&rsquo;, investigate</td>
+<td>If a hit&rsquo;s lineage matches NCBI&rsquo;s <em>other sequences</em> category, we ignore the hit, but quantify and report how many hits are affected.</td>
+</tr>
+<tr>
+<td align="center">IGNORED</td>
+<td align="center">UNKNOWN TAXA</td>
+<td align="center">superkingdom is unknown, investigate</td>
+<td>If a hit&rsquo;s superkingdom is <em>unknown</em> or unclassified, we ignore the hit, but quantify and report how many hits are affected.</td>
+</tr>
+<tr>
+<td align="center">PASS</td>
+<td align="center">BEST HIT</td>
+<td align="center">best hit</td>
+<td>The hit is viral and the single best (non-tied) hit.</td>
+</tr>
+<tr>
+<td align="center">PASS</td>
+<td align="center">RANDOM BEST HIT</td>
+<td align="center">randomly chosen best hit (tied)</td>
+<td>The hit is viral and was tied for the best hit, and was randomly chosen within the tied best hits.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="taxonomyquantification-reports">Taxonomy/Quantification Reports</h2>
+<p>The ultimate purpose of the ViroMatch pipeline is to review metagenomic sequence reads and report hits to known viruses. Upon completion, ViroMatch will provide reports detailing viral taxonomic classification and quantification. All report files are at the top-level of the <code>--outdir</code> directory provided in the execution command, specifically:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">REPORT.nuc_counts.txt
+REPORT.trans_nuc_counts.txt
+REPORT.nuc_ambiguous_counts.txt
+REPORT.trans_nuc_ambiguous_counts.txt
+</code></pre></div><p>These reports are discussed in more detail below.</p>
+<h3 id="nucleotide-counts">Nucleotide Counts</h3>
+<p>The <code>REPORT.nuc_counts.txt</code> file reports read identities to viruses as provided by the nucleotide mapping portions of the ViroMatch pipeline. Reads tallied in this report have been assessed by alignment to the viral-only reference database, validation of candidate viral reads against the NCBI nt reference database, taxonomic classification, and finally assessment by best hit logic. Only reads that have <em>passed</em> all of these steps are considered viral identities.</p>
+
+<a  href="REPORT.nuc_counts.txt" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  
+  Download Example Nucleotide Counts Report
+  
+  <i class="fas fa-download"></i>
+  
+</a>
+
+<p>The nucleotide counts report file consists of the following sections:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Section</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Header</td>
+<td>The header section captures the ViroMatch configuration for the process that produced the attached report information. Pipeline parameters are listed here.</td>
+</tr>
+<tr>
+<td align="center">Lineage (R1 + R2)</td>
+<td>The lineage section provides a breakdown of viral read counts at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are read count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+</tr>
+<tr>
+<td align="center">Genus (R1 + R2)</td>
+<td>The genus section provides a breakdown of viral read counts at genus-level taxonomy. Fields for this table are read count, percent of reads represented, and genus. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined. This is the same cumulative total as listed in the lineage section, but broken down by genus.</td>
+</tr>
+<tr>
+<td align="center">Species (R1 + R2)</td>
+<td>The species section provides a breakdown of viral read counts at species-level taxonomy. Fields for this table are read count, percent of reads represented, and species. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined. This is the same cumulative total as listed in the lineage and genus sections, but broken down by species.</td>
+</tr>
+<tr>
+<td align="center">Lineage (R1)</td>
+<td>The same information as outlined in the <em>Lineage (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Genus (R1)</td>
+<td>The same information as outlined in the <em>Genus (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Species (R1)</td>
+<td>The same information as outlined in the <em>Species (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Lineage (R2)</td>
+<td>The same information as outlined in the <em>Lineage (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+<tr>
+<td align="center">Genus (R2)</td>
+<td>The same information as outlined in the <em>Genus (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+<tr>
+<td align="center">Species (R2)</td>
+<td>The same information as outlined in the <em>Species (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="translated-nucleotide-counts">Translated Nucleotide Counts</h3>
+<p>The <code>REPORT.trans_nuc_counts.txt</code> file reports read identities to viruses as provided by the translated nucleotide mapping portions of the ViroMatch pipeline. Reads tallied in this report have been assessed by alignment to the viral-only translated reference database, validation of candidate viral reads against the NCBI nr reference database, taxonomic classification, and finally assessment by best hit logic. Only reads that have <em>passed</em> all of these steps are considered viral identities.</p>
+
+<a  href="REPORT.trans_nuc_counts.txt" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  
+  Download Example Translated Nucleotide Counts Report
+  
+  <i class="fas fa-download"></i>
+  
+</a>
+
+<p>Translated nucleotide viral identities are reads that failed to map significantly during the nucleotide mapping sections of the pipeline but have identity to translated nucleotide viral references; therefore, these counts are separate and distinct from those listed in the <code>REPORT.trans_nuc_counts.txt</code> report. Adding together the counts in the <code>REPORT.nuc_counts.txt</code> and <code>REPORT.trans_nuc_counts.txt</code> files gives the total viral read counts for a given sample. As reads are given the opportunity to map to nucleotide references before translated nucleotide references, translated nucleotide counts are often much lower in count when compared to nucleotide reference counts.</p>
+<p>The translated nucleotide counts report file consists of the following sections:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Section</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Header</td>
+<td>The header section captures the ViroMatch configuration for the process that produced the attached report information. Pipeline parameters are listed here.</td>
+</tr>
+<tr>
+<td align="center">Lineage (R1 + R2)</td>
+<td>The lineage section provides a breakdown of viral translated read counts at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are read count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+</tr>
+<tr>
+<td align="center">Genus (R1 + R2)</td>
+<td>The genus section provides a breakdown of viral translated read counts at genus-level taxonomy. Fields for this table are read count, percent of reads represented, and genus. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined. This is the same cumulative total as listed in the lineage section, but broken down by genus.</td>
+</tr>
+<tr>
+<td align="center">Species (R1 + R2)</td>
+<td>The species section provides a breakdown of viral translated read counts at species-level taxonomy. Fields for this table are read count, percent of reads represented, and species. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined. This is the same cumulative total as listed in the lineage and genus sections, but broken down by species.</td>
+</tr>
+<tr>
+<td align="center">Lineage (R1)</td>
+<td>The same information as outlined in the <em>Lineage (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Genus (R1)</td>
+<td>The same information as outlined in the <em>Genus (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Species (R1)</td>
+<td>The same information as outlined in the <em>Species (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Lineage (R2)</td>
+<td>The same information as outlined in the <em>Lineage (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+<tr>
+<td align="center">Genus (R2)</td>
+<td>The same information as outlined in the <em>Genus (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+<tr>
+<td align="center">Species (R2)</td>
+<td>The same information as outlined in the <em>Species (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ambiguous-counts">Ambiguous Counts</h3>
+<p>The <code>REPORT.nuc_ambiguous_counts.txt</code> and <code>REPORT.trans_nuc_ambiguous_counts.txt</code> files report ambiguous hit identities encountered by the nucleotide and translated nucleotide mapping portions of the ViroMatch pipeline.</p>
+
+<a  href="REPORT.nuc_ambiguous_counts.txt" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  
+  Download Example Nucleotide Ambiguous Report
+  
+  <i class="fas fa-download"></i>
+  
+</a>
+
+
+<a  href="REPORT.trans_nuc_ambiguous_counts.txt" target="_blank"  class="btn btn-default">
+  
+  
+  
+    
+  
+  Download Example Translated Nucleotide Ambiguous Report
+  
+  <i class="fas fa-download"></i>
+  
+</a>
+
+<p>In early tests of ViroMatch, we noticed that NCBI had questionable taxonomic classifications for some of their reference sequences, leading to misleading identities. Some reads were aligning to references that were: 1) reference sequences that NCBI designates as <em>unclassified sequences</em>; 2) <em>other sequences</em> consisting of cloning vector, synthetic constructs, or other artificial sequences.</p>
+<p>When a read has a hit to a reference whose superkingdom is <em>Unknown</em>, we can&rsquo;t evaluate if the hit is a virus or non-viral, so we ignore/skip the hit; however, we quantify and report how many hits are affected in this manner from all of the reviewed sequences. The <em>other sequences</em> category has reference entries with partial viral sequences submitted as part of cloning vectors etc., which can lead to false negatives during the best hit logic phase of the pipeline. If a hit&rsquo;s lineage matches NCBI&rsquo;s <em>other sequences</em> category, we ignore the hit, but quantify and report how many hits are affected. These categories are now partitioned during ViroMatch classification reports as <em>uknown</em> and <em>ambiguous</em> hit counts, respectively.</p>
+<p>Ambiguous hit counts are reported for reference, but are never considered in the pipeline past the point of their initial taxonomic identification.</p>
+
+<div class="notices note" ><p>It is important to note that a single read can have hits to multiple references. During the best hit logic portion of the pipeline, we evaluate all of the hits for a single read as a <em>read block</em>, or all of the hits for the read. Removing hits for either <em>other sequences</em> or <em>unknown</em> taxonomy removes only those hits from the read block and leaves the other hits for further evaluation; therefore, ambiguous hit removal does not necessarily mean the read has been failed.</p>
+</div>
+
+<p>The ambiguous nucleotide hit counts report files consist of the following sections:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Section</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Other Sequences Header</td>
+<td>The header section captures the ViroMatch configuration for the process that produced the attached report information. Pipeline parameters are listed here.</td>
+</tr>
+<tr>
+<td align="center">Other Sequences Lineage (R1 + R2)</td>
+<td>The lineage section provides a breakdown of hit counts related to <em>other sequences</em> at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are hit count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+</tr>
+<tr>
+<td align="center">Other Sequences Lineage (R1)</td>
+<td>The same information as outlined in the <em>Other Sequences Lineage (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Other Sequences Lineage (R2)</td>
+<td>The same information as outlined in the <em>Other Sequences lineage (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+<tr>
+<td align="center">Unknown Header</td>
+<td>The header section captures the ViroMatch configuration for the process that produced the attached report information. Pipeline parameters are listed here.</td>
+</tr>
+<tr>
+<td align="center">Unknown Lineage (R1 + R2)</td>
+<td>The lineage section provides a breakdown of hit counts related to <em>unknown</em> at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are hit count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+</tr>
+<tr>
+<td align="center">Unknown Lineage (R1)</td>
+<td>The same information as outlined in the <em>Unknown Lineage (R1 + R2)</em> section, but representative of only the contributing R1 reads.</td>
+</tr>
+<tr>
+<td align="center">Unknown Lineage (R2)</td>
+<td>The same information as outlined in the <em>Unknown lineage (R1 + R2)</em> section, but representative of only the contributing R2 reads.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/viromatch/overview/best_hit_logic/" title="Best Hit Logic"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/viromatch/project_info/" title="Project Info" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/viromatch/js/clipboard.min.js?1606160050"></script>
+    <script src="/viromatch/js/perfect-scrollbar.min.js?1606160050"></script>
+    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1606160050"></script>
+    <script src="/viromatch/js/jquery.sticky.js?1606160050"></script>
+    <script src="/viromatch/js/featherlight.min.js?1606160050"></script>
+    <script src="/viromatch/js/highlight.pack.js?1606160050"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1606160050"></script>
+    <script src="/viromatch/js/learn.js?1606160050"></script>
+    <script src="/viromatch/js/hugo-learn.js?1606160050"></script>
+    
+    
+
+  </body>
+</html>

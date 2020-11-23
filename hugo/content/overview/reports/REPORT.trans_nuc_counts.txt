@@ -1,0 +1,307 @@
+-------------------
+ V I R O M A T C H
+-------------------
+
+# adaptor: /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/adaptor/adaptor.fqtrim
+# bam: true
+# bitprox: 1
+# bsize: 1
+# config: /storage1/fs1/kwylie/Active/2020_09_21_AHA/redoPP2/test/CONFIG.yaml
+# dryrun: false
+# endqual: 10
+# evalue: 0.001
+# host: /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/host/GRCh38_latest_genomic.fna
+# input:
+# - /storage1/fs1/kwylie/Archive/2020_09_21_AHA_RAW_DATA_ONLY/RAW_DATA/gerald_HG3LNDSXY_4_GGTTGGAC-TACAGGAT.bam
+# keep: true
+# minn: 50
+# mts: 5
+# nr:
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-10.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-11.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-12.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-13.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-14.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-15.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-16.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-17.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-18.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-19.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-1.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-20.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-21.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-22.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-23.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-24.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-25.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-26.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-27.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-28.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-29.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-2.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-30.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-31.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-32.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-33.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-34.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-35.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-36.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-37.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-38.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-39.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-3.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-40.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-4.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-5.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-6.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-7.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-8.dmnd
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nr/nr-9.dmnd
+# nt:
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-10.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-11.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-12.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-13.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-14.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-15.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-16.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-17.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-18.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-19.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-1.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-20.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-21.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-22.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-23.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-24.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-25.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-26.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-27.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-28.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-29.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-2.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-30.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-31.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-32.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-33.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-34.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-35.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-36.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-37.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-38.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-39.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-3.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-40.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-41.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-42.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-43.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-44.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-45.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-46.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-47.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-48.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-49.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-4.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-50.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-51.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-52.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-53.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-54.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-55.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-56.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-57.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-58.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-59.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-5.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-60.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-61.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-62.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-63.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-64.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-65.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-66.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-67.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-68.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-69.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-6.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-70.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-71.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-72.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-73.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-74.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-7.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-8.fna
+# - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/ncbi/nt/nt-9.fna
+# outdir: /storage1/fs1/kwylie/Active/2020_09_21_AHA/redoPP2/test/
+# phred: 33
+# pid: 0.15
+# pidprox: 0.04
+# readlen: 50
+# sampleid: GAGATTCC-CCTATCCT_S58_L001
+# smkcores: 1
+# snakefile: /usr/lib/python3.7/viromatch/recipes/viromatch.smk
+# taxid: /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/taxonomy/taxonomy.tsv
+# variants: false
+# version: ViroMatch (Revision 45 / Build beta)
+# viralfaa: /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/viral-only/trans_nuc/ncbi_viral_refseq_gn_20191120.dmnd
+# viralfna: /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases/databases/viral-only/nuc/ncbi_viral_refseq_gn_20191120.fna
+# wustlconfig: /storage1/fs1/kwylie/Active/2020_09_21_AHA/redoPP2/run.yaml
+# docker:
+#   image: twylie/vm:45
+#   volumes:
+#   - /storage1/fs1/tnwylie_lab/Active/viroMatchDatabases:/storage1/fs1/tnwylie_lab/Active/viroMatchDatabases
+#   - /storage1/fs1/kwylie/Active/2020_09_21_AHA/redoPP2:/storage1/fs1/kwylie/Active/2020_09_21_AHA/redoPP2
+#   - /storage1/fs1/kwylie/Archive/2020_09_21_AHA_RAW_DATA_ONLY/RAW_DATA:/storage1/fs1/kwylie/Archive/2020_09_21_AHA_RAW_DATA_ONLY/RAW_DATA
+# lsf:
+#   compute group: compute-kwylie
+#   cores: '150'
+#   ignore hosts:
+#   - compute1-exec-67.ris.wustl.edu
+#   - compute1-exec-117.ris.wustl.edu
+#   - compute1-exec-102.ris.wustl.edu
+#   latency wait: '100'
+#   local cores: '1'
+#   log directory: /storage1/fs1/kwylie/Active/2020_09_21_AHA/redoPP2/test/lsf_logs/
+#   memory: 16G
+#   queue: general
+#   restart times: '3'
+
+:BEGIN:
+
+
+Sample ID: GAGATTCC-CCTATCCT_S58_L001
+Date: October 30, 2020
+
+===========================================================================
+TRANSLATED NUCLEOTIDE ALIGNMENT READ COUNTS
+===========================================================================
+
+LINEAGE (R1 + R2)
+--------------------
+[1] read count
+[2] percent
+[3] lineage
+--------------------
+4	0.4	Viruses --> Caudovirales --> Podoviridae --> Autographivirinae --> unclassified Autographivirinae --> Pseudomonas phage PPpW-4
+3	0.3	Viruses --> Caudovirales --> Siphoviridae --> unclassified Siphoviridae --> Streptococcus virus MS1
+2	0.2	Viruses --> Caudovirales --> Podoviridae --> Picovirinae --> Cepunavirus --> Streptococcus virus Cp1 --> Streptococcus phage Cp-1
+1	0.1	Viruses --> Riboviria --> Flaviviridae --> Pegivirus --> Pegivirus C --> GB virus C
+--------------------
+10  TOTAL
+
+
+GENUS (R1 + R2)
+--------------------
+[1] read count
+[2] percent
+[3] genus
+--------------------
+4	0.4	unknown genus | Pseudomonas phage PPpW-4
+3	0.3	unknown genus | Streptococcus virus MS1
+2	0.2	Cepunavirus
+1	0.1	Pegivirus
+--------------------
+10  TOTAL
+
+
+SPECIES (R1 + R2)
+--------------------
+[1] read count
+[2] percent
+[3] species
+--------------------
+4	0.4	Pseudomonas phage PPpW-4
+3	0.3	Streptococcus virus MS1
+2	0.2	Streptococcus virus Cp1
+1	0.1	Pegivirus C
+--------------------
+10  TOTAL
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+LINEAGE (R1)
+--------------------
+[1] read count
+[2] percent
+[3] lineage
+--------------------
+3	0.6	Viruses --> Caudovirales --> Siphoviridae --> unclassified Siphoviridae --> Streptococcus virus MS1
+2	0.4	Viruses --> Caudovirales --> Podoviridae --> Autographivirinae --> unclassified Autographivirinae --> Pseudomonas phage PPpW-4
+--------------------
+5  TOTAL
+
+
+GENUS (R1)
+--------------------
+[1] read count
+[2] percent
+[3] genus
+--------------------
+3	0.6	unknown genus | Streptococcus virus MS1
+2	0.4	unknown genus | Pseudomonas phage PPpW-4
+--------------------
+5  TOTAL
+
+
+SPECIES (R1)
+--------------------
+[1] read count
+[2] percent
+[3] species
+--------------------
+3	0.6	Streptococcus virus MS1
+2	0.4	Pseudomonas phage PPpW-4
+--------------------
+5  TOTAL
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+LINEAGE (R2)
+--------------------
+[1] read count
+[2] percent
+[3] lineage
+--------------------
+2	0.4	Viruses --> Caudovirales --> Podoviridae --> Autographivirinae --> unclassified Autographivirinae --> Pseudomonas phage PPpW-4
+2	0.4	Viruses --> Caudovirales --> Podoviridae --> Picovirinae --> Cepunavirus --> Streptococcus virus Cp1 --> Streptococcus phage Cp-1
+1	0.2	Viruses --> Riboviria --> Flaviviridae --> Pegivirus --> Pegivirus C --> GB virus C
+--------------------
+5  TOTAL
+
+
+GENUS (R2)
+--------------------
+[1] read count
+[2] percent
+[3] genus
+--------------------
+2	0.4	Cepunavirus
+2	0.4	unknown genus | Pseudomonas phage PPpW-4
+1	0.2	Pegivirus
+--------------------
+5  TOTAL
+
+
+SPECIES (R2)
+--------------------
+[1] read count
+[2] percent
+[3] species
+--------------------
+2	0.4	Streptococcus virus Cp1
+2	0.4	Pseudomonas phage PPpW-4
+1	0.2	Pegivirus C
+--------------------
+5  TOTAL
+
+
+:END:
+

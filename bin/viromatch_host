@@ -1,0 +1,14 @@
+#! /usr/bin/python3.7
+
+# This script is the top-most executable for the ViroMatch pipeline. Its
+# sole function is to run the main() routine in the underlying ViroMatch
+# logic code. This version of the pipeline only performs pre-processing and
+# host screening steps.
+
+from viromatch.host import main
+
+if __name__ == '__main__':
+    main()
+
+
+# __END__

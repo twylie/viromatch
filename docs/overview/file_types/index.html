@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="description" content="ViroMatch: Viral Sequence Identification">
+<meta name="author" content="T.N. Wylie">
+
+    <link rel="icon" href="/viromatch/images/favicon.png" type="image/png">
+
+    <title>Input File Types :: ViroMatch</title>
+
+    
+    <link href="/viromatch/css/nucleus.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/fontawesome-all.min.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/hybrid.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/featherlight.min.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/perfect-scrollbar.min.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/auto-complete.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/atom-one-dark-reasonable.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/theme.css?1606160050" rel="stylesheet">
+    <link href="/viromatch/css/hugo-theme.css?1606160050" rel="stylesheet">
+    
+    <link href="/viromatch/css/theme-red.css?1606160050" rel="stylesheet">
+    
+    
+
+    <script src="/viromatch/js/jquery-3.3.1.min.js?1606160050"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/viromatch/overview/file_types/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/viromatch/'>
+
+
+
+
+<svg version="1.1" width="200" height="50" viewBox="0 0 1100 250" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+  <g
+     id="layer1">
+    <g
+       id="g123">
+      <g
+         id="g486"
+         transform="matrix(8.8574711,0,0,8.242622,15.277146,-8.3433826)"
+         style="fill:#ffffff">
+        <g
+           id="g430"
+           style="fill:#ffffff">
+          <path
+             style="fill:#ffffff"
+             d="m 31.917,17.595 c -0.911,-0.691 -2.213,-0.519 -2.91,0.396 -0.066,0.093 -0.12,0.19 -0.174,0.285 l -5.095,-0.863 c 0.048,-0.353 0.08,-0.709 0.08,-1.075 0,-1.481 -0.412,-2.863 -1.118,-4.053 l 3.248,-2.101 c 0.207,0.14 0.46,0.216 0.728,0.191 0.618,-0.057 1.072,-0.599 1.018,-1.221 -0.056,-0.618 -0.603,-1.071 -1.221,-1.016 -0.618,0.055 -1.071,0.603 -1.017,1.221 0.005,0.062 0.021,0.117 0.033,0.178 L 22.262,11.62 C 21.618,10.75 20.808,10.016 19.869,9.469 l 2.318,-3.662 c 0.247,0.04 0.509,0.003 0.742,-0.132 0.536,-0.312 0.722,-0.996 0.409,-1.532 -0.311,-0.539 -0.997,-0.725 -1.534,-0.413 -0.536,0.311 -0.721,0.997 -0.41,1.536 0.03,0.053 0.064,0.099 0.104,0.146 L 19.163,9.099 C 18.373,8.738 17.518,8.495 16.616,8.41 L 17.09,5.61 C 17.272,5.566 17.44,5.475 17.56,5.319 17.834,4.955 17.767,4.438 17.404,4.164 17.041,3.886 16.523,3.957 16.247,4.319 15.973,4.681 16.042,5.2 16.403,5.475 16.438,5.498 16.479,5.507 16.515,5.53 L 16.031,8.383 C 15.97,8.381 15.912,8.374 15.852,8.374 c -1.034,0 -2.019,0.202 -2.922,0.562 L 10.695,4.83 C 10.912,4.555 11.045,4.211 11.039,3.833 11.025,2.96 10.31,2.263 9.437,2.281 8.567,2.295 7.873,3.01 7.886,3.882 7.899,4.752 8.615,5.444 9.487,5.432 9.574,5.43 9.657,5.415 9.74,5.402 l 2.184,4.012 C 10.832,10.031 9.9,10.902 9.209,11.944 L 5.946,9.384 C 6.011,9.145 5.999,8.881 5.891,8.635 5.636,8.07 4.973,7.817 4.407,8.072 3.839,8.326 3.587,8.991 3.841,9.558 c 0.257,0.564 0.921,0.816 1.487,0.562 0.055,-0.026 0.105,-0.06 0.155,-0.092 l 3.316,2.607 c -0.49,0.937 -0.8,1.982 -0.884,3.096 L 3.02,15.722 C 2.883,15.4 2.644,15.117 2.311,14.943 1.54,14.536 0.584,14.83 0.181,15.602 c -0.405,0.771 -0.109,1.725 0.659,2.129 0.771,0.408 1.726,0.11 2.132,-0.661 0.041,-0.075 0.067,-0.153 0.095,-0.234 l 4.845,0.012 c 0.04,0.631 0.146,1.247 0.325,1.833 L 5.106,19.887 C 4.933,19.708 4.699,19.584 4.431,19.552 3.815,19.482 3.26,19.924 3.189,20.538 c -0.071,0.616 0.37,1.178 0.988,1.246 0.615,0.069 1.171,-0.374 1.241,-0.989 0.006,-0.061 0.005,-0.117 0.004,-0.182 l 3.084,-1.188 c 0.611,1.449 1.641,2.683 2.937,3.542 L 9.931,24.528 C 9.698,24.439 9.434,24.422 9.179,24.506 8.587,24.703 8.27,25.337 8.463,25.923 c 0.193,0.59 0.83,0.913 1.418,0.722 0.59,-0.198 0.908,-0.833 0.717,-1.424 -0.021,-0.058 -0.045,-0.11 -0.072,-0.167 l 1.619,-1.67 c 0.771,0.407 1.617,0.687 2.512,0.819 l -0.431,4.041 c -0.244,0.056 -0.473,0.192 -0.639,0.401 -0.38,0.491 -0.292,1.193 0.2,1.577 0.492,0.381 1.197,0.289 1.578,-0.201 0.379,-0.492 0.288,-1.195 -0.203,-1.578 -0.048,-0.033 -0.099,-0.062 -0.149,-0.093 l 0.433,-4.068 c 0.136,0.009 0.27,0.021 0.408,0.021 1.035,0 2.021,-0.203 2.93,-0.562 l 0.804,3.58 c -0.201,0.146 -0.36,0.354 -0.431,0.615 -0.16,0.6 0.193,1.215 0.794,1.376 0.599,0.157 1.216,-0.193 1.376,-0.795 0.16,-0.601 -0.196,-1.215 -0.796,-1.376 -0.059,-0.016 -0.117,-0.022 -0.178,-0.029 l -0.832,-3.706 c 0.579,-0.301 1.111,-0.671 1.597,-1.103 l 1.102,1.552 c -0.099,0.156 -0.15,0.338 -0.125,0.537 0.061,0.448 0.477,0.766 0.929,0.708 0.453,-0.063 0.768,-0.479 0.708,-0.93 -0.062,-0.453 -0.479,-0.768 -0.931,-0.707 -0.042,0.006 -0.075,0.028 -0.115,0.04 l -1.137,-1.602 c 0.838,-0.854 1.479,-1.896 1.864,-3.062 l 5.241,0.891 c 0.108,0.451 0.356,0.869 0.751,1.168 0.913,0.693 2.216,0.52 2.911,-0.395 0.692,-0.911 0.514,-2.213 -0.399,-2.908 z m -18.54,-1.626 c -0.655,0 -1.19,-0.534 -1.19,-1.194 0,-0.657 0.535,-1.188 1.19,-1.188 0.658,0 1.192,0.53 1.192,1.188 0,0.659 -0.533,1.194 -1.192,1.194 z m 3.071,2.588 c -0.482,0 -0.874,-0.392 -0.874,-0.873 0,-0.486 0.392,-0.875 0.874,-0.875 0.483,0 0.875,0.388 0.875,0.875 -0.001,0.484 -0.392,0.873 -0.875,0.873 z m 3.246,-3.703 c -0.712,0 -1.289,-0.577 -1.289,-1.287 0,-0.715 0.577,-1.293 1.289,-1.293 0.712,0 1.29,0.578 1.29,1.293 0,0.71 -0.577,1.287 -1.29,1.287 z"
+             id="path428" />
+        </g>
+        <g
+           id="g432"
+           style="fill:#ffffff" />
+        <g
+           id="g434"
+           style="fill:#ffffff" />
+        <g
+           id="g436"
+           style="fill:#ffffff" />
+        <g
+           id="g438"
+           style="fill:#ffffff" />
+        <g
+           id="g440"
+           style="fill:#ffffff" />
+        <g
+           id="g442"
+           style="fill:#ffffff" />
+        <g
+           id="g444"
+           style="fill:#ffffff" />
+        <g
+           id="g446"
+           style="fill:#ffffff" />
+        <g
+           id="g448"
+           style="fill:#ffffff" />
+        <g
+           id="g450"
+           style="fill:#ffffff" />
+        <g
+           id="g452"
+           style="fill:#ffffff" />
+        <g
+           id="g454"
+           style="fill:#ffffff" />
+        <g
+           id="g456"
+           style="fill:#ffffff" />
+        <g
+           id="g458"
+           style="fill:#ffffff" />
+        <g
+           id="g460"
+           style="fill:#ffffff" />
+      </g>
+ <text x="331.8631" y="182.52051" fill="#FFFF" font-family="sans-serif" font-size="149.93px" stroke-width=".26458" style="line-height:1.25" xml:space="preserve"><tspan x="331.8631" y="182.52051" fill="#FFFFFF" font-family="'Novacento Sans Wide'" font-size="149.93px" stroke-width=".26458">ViroMatch</tspan></text>
+</svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/viromatch/js/lunr.min.js?1606160050"></script>
+<script type="text/javascript" src="/viromatch/js/auto-complete.js?1606160050"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/twylie.github.io\/viromatch\/";
+    
+</script>
+<script type="text/javascript" src="/viromatch/js/search.js?1606160050"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/viromatch/'><i class='fas fa-home'></i>&nbsp;Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/quick_start/" title="Quick Start" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/quick_start/">
+          <b>1. </b>Quick Start
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/quick_start/install_and_execution/" title="Installation and Pipeline Execution" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/quick_start/install_and_execution/">
+          Installation and Pipeline Execution
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/" title="Download and Installation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/">
+          <b>2. </b>Download and Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/prerequisites/" title="Prerequisites" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/prerequisites/">
+          Prerequisites
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/docker/" title="Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/docker/">
+          Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/download_viromatch/" title="Download ViroMatch" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/download_viromatch/">
+          Download ViroMatch
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/download_and_install/databases/" title="Databases" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/download_and_install/databases/">
+          Databases
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/" title="Running ViroMatch" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/">
+          <b>3. </b>Running ViroMatch
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/mapping_volumes/" title="Mapping Docker Volumes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/mapping_volumes/">
+          Mapping Docker Volumes
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/interactive_docker/" title="Interactive Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/interactive_docker/">
+          Interactive Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/cli_docker/" title="Command Line Docker" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/cli_docker/">
+          Command Line Docker
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/execution/cli_args/" title="Command Line Arguments" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/execution/cli_args/">
+          Command Line Arguments
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/" title="Pipeline Overview" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/viromatch/overview/">
+          <b>4. </b>Pipeline Overview
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/summary/" title="Pipeline Summary" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/summary/">
+          Pipeline Summary
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/snakemake/" title="Snakemake" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/snakemake/">
+          Snakemake
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/steps/" title="Steps in the Pipeline" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/steps/">
+          Steps in the Pipeline
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/tools/" title="Third-Party Tools" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/tools/">
+          Third-Party Tools
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/file_types/" title="Input File Types" class="dd-item
+        parent
+        active
+        
+        ">
+      <a href="/viromatch/overview/file_types/">
+          Input File Types
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/best_hit_logic/" title="Best Hit Logic" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/best_hit_logic/">
+          Best Hit Logic
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/overview/reports/" title="Reports and Output Files" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/overview/reports/">
+          Reports and Output Files
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/" title="Project Info" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/">
+          <b>5. </b>Project Info
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/version/" title="Version" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/version/">
+          Version
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/authors/" title="Authors" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/authors/">
+          Authors
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/license/" title="License" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/license/">
+          License
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/funding/" title="Funding" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/funding/">
+          Funding
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/viromatch/project_info/disclaimer/" title="Disclaimer" class="dd-item
+        
+        
+        
+        ">
+      <a href="/viromatch/project_info/disclaimer/">
+          Disclaimer
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+
+<p><u>Funding</u>: NIH CTSA UL1TR002345, NIH 1R01HD095986</p>
+
+<br>
+
+<p><u>Disclaimer</u>: This resource is intended for purely research purposes. It should not be used for emergencies or medical or professional advice.</p>
+
+<br>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/80x15.png" /></a><br />Site content licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>. Copyright (C) 2019&mdash;2020 T.N. Wylie and K.M. Wylie.</P>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/viromatch/'>Home</a> > <a href='/viromatch/overview/'>Pipeline Overview</a> > Input File Types
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#pipeline-input-files">Pipeline Input Files</a></li>
+    <li><a href="#fastq-files">FASTQ Files</a></li>
+    <li><a href="#ubam-file">uBAM File</a></li>
+    <li><a href="#ncbi-nt-files">NCBI nt Files</a>
+      <ul>
+        <li><a href="#command-line-list-nt">Command Line List (nt)</a></li>
+        <li><a href="#file-of-file-names-nt">File of File Names (nt)</a></li>
+      </ul>
+    </li>
+    <li><a href="#ncbi-nr-files">NCBI nr Files</a>
+      <ul>
+        <li><a href="#command-line-list-nr">Command Line List (nr)</a></li>
+        <li><a href="#file-of-file-names-nr">File of File Names (nr)</a></li>
+      </ul>
+    </li>
+    <li><a href="#viralfna-file">Viralfna File</a></li>
+    <li><a href="#viralfaa-file">Viralfaa File</a></li>
+    <li><a href="#host-file">Host File</a></li>
+    <li><a href="#adaptor-file">Adaptor File</a></li>
+    <li><a href="#taxid-file">Taxid File</a></li>
+    <li><a href="#wustlconfig-file">Wustlconfig File</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Input File Types
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="pipeline-input-files">Pipeline Input Files</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--input</code></td>
+<td align="center">file path(s)</td>
+<td>Path to the input read file(s). A user may provide either (1) a single input uBAM file or (2) paired FASTQ files. If a uBAM file is provided, it will be converted to paired FASTQ files for downstream processing. If paired FASTQ files are provided, the R1-file should be first followed by the R2-file, space delimited.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fastq-files">FASTQ Files</h2>
+<p><a href="https://en.wikipedia.org/wiki/FASTQ_format">FASTQ</a> is an extension of the veneral <a href="https://en.wikipedia.org/wiki/FASTA_format">FASTA</a> sequence format first described by <a href="https://academic.oup.com/nar/article/38/6/1767/3112533">P. Cock, et al</a>. FASTQ combines sequence and quality information in the same file format. ViroMatch accepts paired FASTQ files &mdash; i.e. two FASTQ files from the same sample with read-1 and read-2 pairs broken out, ordered by corresponding read pair ids &mdash; as <code>--input</code> when running the pipeline.</p>
+
+<div class="notices note" ><p>For FASTQ support, ViroMatch requires that you pass two FASTQ files whose order retains correspondiong read pair ids. For example, read_1/1 and read_1/2 should be the first entries in the FASTQ files, respectively.</p>
+</div>
+
+<p>Within the larger ViroMatch command, the <code>--input</code> argument for FASTQ files would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --input example.r1.fastq example.r2.fastq
+</code></pre></div><p>The first 2 entries of example.r1.fastq file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">@D00170:57:CA2R8ANXX:4:1101:10005:81687/1
+GTTTCTACCATGTGTACTGGAATTCTTATAGTTCTAGCTTGATCTGCTATTGCTCTTGTAATAGCTTGTCTTATCCACCATGTTGCATAAGTACTAAATTTAAAACCTTTAGTATAATCAAACTTC
++
+BBBBBF/&lt;B/&lt;FBFF&lt;FF///&lt;FB//BB/FFFFFFFBFF///&lt;FF&lt;FFF/FFFB/BFF&lt;F/FF/FFFFFF&lt;F&lt;FFFF//&lt;FFF&lt;&lt;FF/F//&lt;FF//&lt;BF/&lt;&lt;FFFFF/FFF/FFFFBF/FF&lt;BB&lt;/
+@D00170:57:CA2R8ANXX:4:1101:10024:71656/1
+ACACTGCTTCACCCACTCCCACGGCTCCACCGTCCCATCTCCGTCCAAATCGGGGCTGAGGTCGCGGTGGCCGCATACACGGGCGTTCCGGAACTGTTGTAGCAGCTGGTACACCAGCAGGTGCAG
++
+BBBBBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+</code></pre></div><p>The first 2 entries of example.r2.fastq file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">@D00170:57:CA2R8ANXX:4:1101:10005:81687/2
+AGAGGCTAAACAAAAATTAGCAGAGTCAAACTTAAGATTAGTTGTAAGTATTGCTAAAAAATATGTTGGAAGAGGAATGCTATTCTTAGATTTAATACAAGAAGGTAACATGGGTCTTATAAAAGC
++
+BBBBBFFBFFFFFFFFFFFFFFBFFFFFFFF&lt;/FFFFFFF/&lt;F&lt;F/FBF&lt;&lt;FFF/FFFBF&lt;&lt;F&lt;FBBBF/BBBBBFBBFFFFFFFF/B&lt;BBFFFFFFFFBF/FFFBBFFFF/FFFFFF&lt;FF/7&lt;B/
+@D00170:57:CA2R8ANXX:4:1101:10024:71656/2
+GAAGGCGGGCTGGATGCCCGGGGAAATCCGAAGGATACCCGTACGCCGGAGCAGCATTCGGCCCTGCACCTGCTGGTGTACCAGCTGCTACAACAGTTCCGGAACGCCCGTGTATGCGGCCACCGC
++
+BBBBBFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+</code></pre></div><p>Note in the example above that sequence <code>@D00170:57:CA2R8ANXX:4:1101:10005:81687</code> has read-1 ordered in the <code>example.r1.fastq</code> file corresponding to read-2 in the <code>example.r2.fastq</code> file, as indicated by the <code>/r1</code> and <code>/r2</code> suffixes, respectively.</p>
+<h2 id="ubam-file">uBAM File</h2>
+<p>It is not uncommon for unmapped FASTQ files to be stored in the BAM format simply to take advantage of its file compression format and save disk space. If your started point is such an unmapped BAM (uBAM) file, where read pairs are stored in the BAM format, you may feed ViroMatch a single uBAM file as <code>--input</code> when running the pipeline. ViroMatch will automatically convert the BAM file into constituent FASTQ read files (R1 &amp; R2) while executing the pipeline.</p>
+
+<div class="notices note" ><p>For those running ViroMatch at Washington University School of Medicine through the <strong>compute1</strong> high performance computing server, your input will almost always be the uBAM format.</p>
+</div>
+
+<p>For an in-depth overview of the SAM/BAM file specification please visit the <a href="http://samtools.github.io/hts-specs/">SAM/BAM and related specifications</a> page or <a href="https://github.com/samtools/hts-specs">samtools/hts-specs</a> repository.</p>
+<p>Within the larger ViroMatch command, the <code>--input</code> argument for a BAM would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --input example.bam
+</code></pre></div><p>BAM files are not directly human-readable but can be viewed using <a href="http://www.htslib.org/">Samtools</a> software.</p>
+<h2 id="ncbi-nt-files">NCBI nt Files</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--nt</code></td>
+<td align="center">file path(s)</td>
+<td>Space delimited list of paths to ViroMatch&rsquo;s split NCBI nt nucleotide indexed FASTA files. Alternatively, a file with paths to the files, one per line, can be supplied instead, provided the file has a <em>.fofn</em> suffix &mdash; e.g. NT.fofn file.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="command-line-list-nt">Command Line List (nt)</h3>
+<p>The NCBI nt reference database is too large to pragmatically facilitate direct alignments without considerable computational resources. Therefore, we have split nt into multiple parts for iterative processing. The <code>--nt</code> argument points ViroMatch to where the split and indexed nt reference files reside on your system. File paths should be fully qualified and not rely on relative paths.</p>
+<p>We may pass these files directly on the command line when running the pipeline, space-delimited. Within the larger ViroMatch command, the <code>--nt</code> argument for FASTQ files would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --nt /databases/ncbi/nt/nt-1.fna /databases/ncbi/nt/nt-2.fna /databases/ncbi/nt/nt-3.fna /databases/ncbi/nt/nt-4.fna /databases/ncbi/nt/nt-5.fna /databases/ncbi/nt/nt-6.fna /databases/ncbi/nt/nt-7.fna /databases/ncbi/nt/nt-8.fna /databases/ncbi/nt/nt-9.fna /databases/ncbi/nt/nt-10.fna /databases/ncbi/nt/nt-11.fna /databases/ncbi/nt/nt-12.fna /databases/ncbi/nt/nt-13.fna /databases/ncbi/nt/nt-14.fna /databases/ncbi/nt/nt-15.fna /databases/ncbi/nt/nt-16.fna /databases/ncbi/nt/nt-17.fna /databases/ncbi/nt/nt-18.fna /databases/ncbi/nt/nt-19.fna /databases/ncbi/nt/nt-20.fna /databases/ncbi/nt/nt-21.fna /databases/ncbi/nt/nt-22.fna /databases/ncbi/nt/nt-23.fna /databases/ncbi/nt/nt-24.fna /databases/ncbi/nt/nt-25.fna /databases/ncbi/nt/nt-26.fna /databases/ncbi/nt/nt-27.fna /databases/ncbi/nt/nt-28.fna /databases/ncbi/nt/nt-29.fna /databases/ncbi/nt/nt-30.fna /databases/ncbi/nt/nt-31.fna /databases/ncbi/nt/nt-32.fna /databases/ncbi/nt/nt-33.fna /databases/ncbi/nt/nt-34.fna /databases/ncbi/nt/nt-35.fna /databases/ncbi/nt/nt-36.fna /databases/ncbi/nt/nt-37.fna /databases/ncbi/nt/nt-38.fna /databases/ncbi/nt/nt-39.fna /databases/ncbi/nt/nt-40.fna /databases/ncbi/nt/nt-41.fna /databases/ncbi/nt/nt-42.fna /databases/ncbi/nt/nt-43.fna /databases/ncbi/nt/nt-44.fna /databases/ncbi/nt/nt-45.fna /databases/ncbi/nt/nt-46.fna /databases/ncbi/nt/nt-47.fna /databases/ncbi/nt/nt-48.fna /databases/ncbi/nt/nt-49.fna /databases/ncbi/nt/nt-50.fna /databases/ncbi/nt/nt-51.fna /databases/ncbi/nt/nt-52.fna /databases/ncbi/nt/nt-53.fna /databases/ncbi/nt/nt-54.fna /databases/ncbi/nt/nt-55.fna /databases/ncbi/nt/nt-56.fna /databases/ncbi/nt/nt-57.fna /databases/ncbi/nt/nt-58.fna /databases/ncbi/nt/nt-59.fna /databases/ncbi/nt/nt-60.fna /databases/ncbi/nt/nt-61.fna /databases/ncbi/nt/nt-62.fna /databases/ncbi/nt/nt-63.fna /databases/ncbi/nt/nt-64.fna /databases/ncbi/nt/nt-65.fna /databases/ncbi/nt/nt-66.fna /databases/ncbi/nt/nt-67.fna /databases/ncbi/nt/nt-68.fna /databases/ncbi/nt/nt-69.fna /databases/ncbi/nt/nt-70.fna /databases/ncbi/nt/nt-71.fna /databases/ncbi/nt/nt-72.fna /databases/ncbi/nt/nt-73.fna /databases/ncbi/nt/nt-74.fna
+</code></pre></div><p>Although we are pointing to the FASTA files in the above command, the corresponding indexed files should also be present on your system. For example, <code>/databases/ncbi/nt/nt-1.fna</code> should have the following files located along with the FASTA file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">/databases/ncbi/nt/nt-1.fna
+/databases/ncbi/nt/nt-1.fna.amb
+/databases/ncbi/nt/nt-1.fna.ann
+/databases/ncbi/nt/nt-1.fna.bwt
+/databases/ncbi/nt/nt-1.fna.pac
+/databases/ncbi/nt/nt-1.fna.sa
+</code></pre></div><h3 id="file-of-file-names-nt">File of File Names (nt)</h3>
+<p>In the above command line example, we passed all of the split and indexed nt database files on the command line as a list. As there are many split files, using this method makes the command line statement hard to read, and invites user error (e.g. accidentally omitting a split file). Therefore it is recommended that you supply the <code>--nt</code> argument a file of file names where each line is a fully qualified path to the nt FASTA files.</p>
+
+<div class="notices warning" ><p>Your file of file names file must end in a <code>.fofn</code> suffix.</p>
+</div>
+
+<p>Although we are pointing to the FASTA files in the <em>fofn</em> file, the corresponding indexed files should also be present on your system as outlined above.</p>
+<p>Within the larger ViroMatch command, the <code>--nt</code> argument for the file of file names would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --nt /databases/ncbi/nt/nt.fofn
+</code></pre></div><p>The <code>nt.fofn</code> file will contain the paths to all of the split NCBI nt files, like so.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plain" data-lang="plain">/databases/ncbi/nt/nt-1.fna
+/databases/ncbi/nt/nt-2.fna
+/databases/ncbi/nt/nt-3.fna
+/databases/ncbi/nt/nt-4.fna
+/databases/ncbi/nt/nt-5.fna
+/databases/ncbi/nt/nt-6.fna
+/databases/ncbi/nt/nt-7.fna
+/databases/ncbi/nt/nt-8.fna
+/databases/ncbi/nt/nt-9.fna
+/databases/ncbi/nt/nt-10.fna
+/databases/ncbi/nt/nt-11.fna
+/databases/ncbi/nt/nt-12.fna
+/databases/ncbi/nt/nt-13.fna
+/databases/ncbi/nt/nt-14.fna
+/databases/ncbi/nt/nt-15.fna
+/databases/ncbi/nt/nt-16.fna
+/databases/ncbi/nt/nt-17.fna
+/databases/ncbi/nt/nt-18.fna
+/databases/ncbi/nt/nt-19.fna
+/databases/ncbi/nt/nt-20.fna
+/databases/ncbi/nt/nt-21.fna
+/databases/ncbi/nt/nt-22.fna
+/databases/ncbi/nt/nt-23.fna
+/databases/ncbi/nt/nt-24.fna
+/databases/ncbi/nt/nt-25.fna
+/databases/ncbi/nt/nt-26.fna
+/databases/ncbi/nt/nt-27.fna
+/databases/ncbi/nt/nt-28.fna
+/databases/ncbi/nt/nt-29.fna
+/databases/ncbi/nt/nt-30.fna
+/databases/ncbi/nt/nt-31.fna
+/databases/ncbi/nt/nt-32.fna
+/databases/ncbi/nt/nt-33.fna
+/databases/ncbi/nt/nt-34.fna
+/databases/ncbi/nt/nt-35.fna
+/databases/ncbi/nt/nt-36.fna
+/databases/ncbi/nt/nt-37.fna
+/databases/ncbi/nt/nt-38.fna
+/databases/ncbi/nt/nt-39.fna
+/databases/ncbi/nt/nt-40.fna
+/databases/ncbi/nt/nt-41.fna
+/databases/ncbi/nt/nt-42.fna
+/databases/ncbi/nt/nt-43.fna
+/databases/ncbi/nt/nt-44.fna
+/databases/ncbi/nt/nt-45.fna
+/databases/ncbi/nt/nt-46.fna
+/databases/ncbi/nt/nt-47.fna
+/databases/ncbi/nt/nt-48.fna
+/databases/ncbi/nt/nt-49.fna
+/databases/ncbi/nt/nt-50.fna
+/databases/ncbi/nt/nt-51.fna
+/databases/ncbi/nt/nt-52.fna
+/databases/ncbi/nt/nt-53.fna
+/databases/ncbi/nt/nt-54.fna
+/databases/ncbi/nt/nt-55.fna
+/databases/ncbi/nt/nt-56.fna
+/databases/ncbi/nt/nt-57.fna
+/databases/ncbi/nt/nt-58.fna
+/databases/ncbi/nt/nt-59.fna
+/databases/ncbi/nt/nt-60.fna
+/databases/ncbi/nt/nt-61.fna
+/databases/ncbi/nt/nt-62.fna
+/databases/ncbi/nt/nt-63.fna
+/databases/ncbi/nt/nt-64.fna
+/databases/ncbi/nt/nt-65.fna
+/databases/ncbi/nt/nt-66.fna
+/databases/ncbi/nt/nt-67.fna
+/databases/ncbi/nt/nt-68.fna
+/databases/ncbi/nt/nt-69.fna
+/databases/ncbi/nt/nt-70.fna
+/databases/ncbi/nt/nt-71.fna
+/databases/ncbi/nt/nt-72.fna
+/databases/ncbi/nt/nt-73.fna
+/databases/ncbi/nt/nt-74.fna
+</code></pre></div><h2 id="ncbi-nr-files">NCBI nr Files</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--nr</code></td>
+<td align="center">file path(s)</td>
+<td>Space delimited list of paths to ViroMatch&rsquo;s split NCBI nr nucleotide indexed FASTA files. Alternatively, a file with paths to the files, one per line, can be supplied instead, provided the file has a <em>.fofn</em> suffix &mdash; e.g. NR.fofn file.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="command-line-list-nr">Command Line List (nr)</h3>
+<p>The NCBI nr reference database is too large to pragmatically facilitate direct alignments without considerable computational resources. Therefore, we have split nt into multiple parts for iterative processing. The <code>--nr</code> argument points ViroMatch to where the split and indexed nr reference files reside on your system. File paths should be fully qualified and not rely on relative paths.</p>
+<p>We may pass these files directly on the command line when running the pipeline, space-delimited. Within the larger ViroMatch command, the <code>--nr</code> argument for FASTQ files would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --nr /databases/ncbi/nr/nr-1.dmnd /databases/ncbi/nr/nr-2.dmnd /databases/ncbi/nr/nr-3.dmnd /databases/ncbi/nr/nr-4.dmnd /databases/ncbi/nr/nr-5.dmnd /databases/ncbi/nr/nr-6.dmnd /databases/ncbi/nr/nr-7.dmnd /databases/ncbi/nr/nr-8.dmnd /databases/ncbi/nr/nr-9.dmnd /databases/ncbi/nr/nr-10.dmnd /databases/ncbi/nr/nr-11.dmnd /databases/ncbi/nr/nr-12.dmnd /databases/ncbi/nr/nr-13.dmnd /databases/ncbi/nr/nr-14.dmnd /databases/ncbi/nr/nr-15.dmnd /databases/ncbi/nr/nr-16.dmnd /databases/ncbi/nr/nr-17.dmnd /databases/ncbi/nr/nr-18.dmnd /databases/ncbi/nr/nr-19.dmnd /databases/ncbi/nr/nr-20.dmnd /databases/ncbi/nr/nr-21.dmnd /databases/ncbi/nr/nr-22.dmnd /databases/ncbi/nr/nr-23.dmnd /databases/ncbi/nr/nr-24.dmnd /databases/ncbi/nr/nr-25.dmnd /databases/ncbi/nr/nr-26.dmnd /databases/ncbi/nr/nr-27.dmnd /databases/ncbi/nr/nr-28.dmnd /databases/ncbi/nr/nr-29.dmnd /databases/ncbi/nr/nr-30.dmnd /databases/ncbi/nr/nr-31.dmnd /databases/ncbi/nr/nr-32.dmnd /databases/ncbi/nr/nr-33.dmnd /databases/ncbi/nr/nr-34.dmnd /databases/ncbi/nr/nr-35.dmnd /databases/ncbi/nr/nr-36.dmnd /databases/ncbi/nr/nr-37.dmnd /databases/ncbi/nr/nr-38.dmnd /databases/ncbi/nr/nr-39.dmnd /databases/ncbi/nr/nr-40.dmnd
+</code></pre></div><h3 id="file-of-file-names-nr">File of File Names (nr)</h3>
+<p>In the above command line example, we passed all of the split and indexed nr database files on the command line as a list. As there are many split files, using this method makes the command line statement hard to read, and invites user error (e.g. accidentally omitting a split file). Therefore it is recommended that you supply the <code>--nr</code> argument a file of file names where each line is a fully qualified path to the nt FASTA files.</p>
+
+<div class="notices warning" ><p>Your file of file names file must end in a <code>.fofn</code> suffix.</p>
+</div>
+
+<p>Within the larger ViroMatch command, the <code>--nr</code> argument for the file of file names would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --nr /databases/ncbi/nr/nr.fofn
+</code></pre></div><p>The <code>nr.fofn</code> file will contain the paths to all of the split NCBI nr files, like so.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">/databases/ncbi/nr/nr-1.dmnd
+/databases/ncbi/nr/nr-2.dmnd
+/databases/ncbi/nr/nr-3.dmnd
+/databases/ncbi/nr/nr-4.dmnd
+/databases/ncbi/nr/nr-5.dmnd
+/databases/ncbi/nr/nr-6.dmnd
+/databases/ncbi/nr/nr-7.dmnd
+/databases/ncbi/nr/nr-8.dmnd
+/databases/ncbi/nr/nr-9.dmnd
+/databases/ncbi/nr/nr-10.dmnd
+/databases/ncbi/nr/nr-11.dmnd
+/databases/ncbi/nr/nr-12.dmnd
+/databases/ncbi/nr/nr-13.dmnd
+/databases/ncbi/nr/nr-14.dmnd
+/databases/ncbi/nr/nr-15.dmnd
+/databases/ncbi/nr/nr-16.dmnd
+/databases/ncbi/nr/nr-17.dmnd
+/databases/ncbi/nr/nr-18.dmnd
+/databases/ncbi/nr/nr-19.dmnd
+/databases/ncbi/nr/nr-20.dmnd
+/databases/ncbi/nr/nr-21.dmnd
+/databases/ncbi/nr/nr-22.dmnd
+/databases/ncbi/nr/nr-23.dmnd
+/databases/ncbi/nr/nr-24.dmnd
+/databases/ncbi/nr/nr-25.dmnd
+/databases/ncbi/nr/nr-26.dmnd
+/databases/ncbi/nr/nr-27.dmnd
+/databases/ncbi/nr/nr-28.dmnd
+/databases/ncbi/nr/nr-29.dmnd
+/databases/ncbi/nr/nr-30.dmnd
+/databases/ncbi/nr/nr-31.dmnd
+/databases/ncbi/nr/nr-32.dmnd
+/databases/ncbi/nr/nr-33.dmnd
+/databases/ncbi/nr/nr-34.dmnd
+/databases/ncbi/nr/nr-35.dmnd
+/databases/ncbi/nr/nr-36.dmnd
+/databases/ncbi/nr/nr-37.dmnd
+/databases/ncbi/nr/nr-38.dmnd
+/databases/ncbi/nr/nr-39.dmnd
+/databases/ncbi/nr/nr-40.dmnd
+</code></pre></div><h2 id="viralfna-file">Viralfna File</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--viralfna</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s viral identity nucleotide indexed FASTA file. Putative viral identities come from this database prior to extended validation alignments.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>--viralfna</code> argument points to the path where ViroMatch&rsquo;s viral nucleotide database is installed on your system. File paths should be fully qualified and not rely on relative PATHS.</p>
+<p>Within the larger ViroMatch command, the <code>--viralfna</code> argument for the viral nucleotide database would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --viralfna /databases/viral-only/nuc/ncbi_viral.fna
+</code></pre></div><p>Although we are pointing to the FASTA files in the above command, the corresponding indexed files should also be present on your system. For example, <code>/databases/viral-only/nuc/ncbi_viral.fna</code> should have the following files located along with the FASTA file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">/databases/viral-only/nuc/ncbi_viral.fna
+/databases/viral-only/nuc/ncbi_viral.fna.amb
+/databases/viral-only/nuc/ncbi_viral.fna.ann
+/databases/viral-only/nuc/ncbi_viral.fna.bwt
+/databases/viral-only/nuc/ncbi_viral.fna.pac
+/databases/viral-only/nuc/ncbi_viral.fna.sa
+</code></pre></div><p>The viral nucleotide database ViroMatch uses has been formatted in a manner to expedite processing time. Reference sequences have had their associated NCBI taxon ids annotated on each reference&rsquo;s FASTA header. Pre-associating the taxon ids speeds up taxonomy association within the pipeline considerably.</p>
+<p>In the following reference example, the taxon id <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1868221">1868221</a> can be used to lookup the full lineage for <a href="https://www.ncbi.nlm.nih.gov/nuccore/MK746103.1">MK746103.1</a> accession id.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">&gt;MK746103.1|1868221 Porcine circovirus 3 strain PCV3/CNF/Xinjiang-160/2018, complete genome
+TAGTATTACCCGGCACCTCGGAACCCGGATCCACGGAGGTCTGTAGGGAGAAAAAGTGGTATCCCATTATGGATGCTCCG
+CACCGTGTGAGTGGATATACCGGGCAGTGGATGATGAAGCGGCCTCGTGTTTTGATGCCGCAGGACGGGGACTGGATAAC
+TGAGTTTTTGTGGTGCTACGAGTGTCCTGAAGATAAGGACTTTTATTGTCATCCTATTCTAGGTCCGGAGGGAAAGCCCG
+AAACACAGGTGGTGTTTTACGATAAACAACTGGACCCCGACCGAGTGGGAATCTATTGTGGAGTGTGGAGGCAGTATAGC
+GAGATACCTTATTATCGGCAAAGAGGTTGGAAAAAGCGGTACCCCACACTTGCAAGGGTACGTGAATTTCAAGAACAAAA
+GGCGACTCAGCTCGGTGAAGCGCTTACCCGGATTTGGTCGGGCCCATCTGGAGCCGGCGAGGGGGAGCCACAAAGAGGCC
+AGCGAGTATTGCAAGAAAGAGGGGGATTACCTCGAGATTGGCGAAGATTCCTCTTCGGGTACCAGATCGGATCTTCAAGC
+AGCAGCTCGGATTCTGACGGAGACGGCGGGAAATCTGACTGAAGTTGCGGAGAAGATGCCTGCAGTATTTATACGCTATG
+GGCGGGGTTTGCGTGATTTTTGCGGGGTGATGGGGTTGGGTAAACCGCGTGATTTTAAAACTGAAGTTTATGTTTTTATT
+GGTCCTCCAGGATGCGGGAAAACGCGGGAAGCTTGTGCGGATGCGGCTGCGCGGGAATTGCAGTTGTATTTCAAGCCACG
+GGGGCCTTGGTGGGATGGTTATAATGGGGAGGGTGCTGTTATTTTGGATGATTTTTATGGGTGGGTTCCATTTGATGAAT
+TGCTGAGAATTGGGGACAGGTACCCTCTGAGGGTTCCTGTTAAGGGTGGGTTTGTTAATTTTGTGGCTAAGGTATTATAT
+ATTACTAGTAATGTTGTACCGGAGGAGTGGTATTCATCGGAGAATATTCGTGGAAAGTTGGAGGCCTTGTTTAGGAGGTT
+CACTAAGGTTGTTTGTTGGGGGGAGGGGGGGGTAAAGAAAGACATGGAGACAGTGTATCCAATAAACTATTGATTTTATT
+TGCACTTGTGTACAATTATTGCGTTGGGGTGGGGGTATTTATTGGGAGGGTGGGTGGGCAGCCCCCTAGCCACGGCTTGT
+CGCCCCCACCGAAGCATGTGGGGGATGGGGTCCCCACATGCGAGGGCGTTTACCTGTGCCCGCACCCGAAGCGCAGCGGG
+AGCGCGCGCGAGGGGACACGGCTTGTCGCCACCGGAGGGGTCAGATTTATATTTATTGTCACTTAGAGAACGGACTTGTA
+ACGAATCCAAACTTCTTTGGTGCCGTAGAAGTCTGTCATTCCAGTTTTTTCCGGGACATAAATGCTCCAAAGCAGTGCTC
+CCCATTGAACGGTGGGGTCATATGTGTTGAGCCATGGGGTGGGTCTGGAGAAAAAGAAGAGGCTTTGTCCTGGGTGAGTG
+CTGGTAGTTCCCGCCAGAATTGGTTTGGGGGTGAAGTAAAGGCTGTGTTTTCTTTTAGAAGTCATAACTTTACGAGTGGA
+ACTTTCCGCATAAGGGTCGTCTTGGAGCCAAGTGTTTGTGGTCCAGGCGCCGTCTAGATCTATGGCTGTGTGCCCGAACA
+TAGTTTTTGTTTGCTGAGCCGGAGAAATTACAGGGCTGAGTGTAACTTTCATCTTTAGTATCTTATAATATTCAAAGGTA
+ATTGCAGTTTCCCATTCGTTTAGGCGGGTAATGAAGTGGTTGGCGTGCCAGGGCTTGTTATTCTGAGGGGTTCCAACGGA
+TATGACGTTCATGGTGGAGTATTTCTTTGTGTAGTATGTGCCAGCTGTGGGCCTCCTAATGAATAGTCTTCTTCTGGCAT
+AGCGCCTTCTGTGGCGTCGTCGTCTCCTTGGGCGGGGTCTTCTTCTGAATATAGCTCTGTGTCTCATTTTGGTGCCGGGC
+</code></pre></div><h2 id="viralfaa-file">Viralfaa File</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--viralfaa</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s viral identity translated nucleotide indexed FASTA file. Putative viral identities come from this database prior to extended validation alignments.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>--viralfaa</code> argument points to the path where ViroMatch&rsquo;s viral translated nucleotide database is installed on your system. File paths should be fully qualified and not rely on relative paths.</p>
+<p>Within the larger ViroMatch command, the <code>--viralfaa</code> argument for the viral nucleotide database would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --viralfna /databases/viral-only/trans_nuc/ncbi_viral.dmnd
+</code></pre></div><p>The translated viral nucleotide database ViroMatch uses is the exact same reference used in the <code>--viralfna</code>, but has been six-frame translated and indexed for translated alignments.</p>
+<p>The translated viral nucleotide database ViroMatch uses has been formatted in a manner to expedite processing time. Reference sequences have had their associated NCBI taxon ids annotated on each reference&rsquo;s FASTA header. Pre-associating the taxon ids speeds up taxonomy association within the pipeline considerably.</p>
+<p>In the following reference example, the taxon id <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1868221">1868221</a> can be used to lookup the full lineage for <a href="https://www.ncbi.nlm.nih.gov/nuccore/MK746103.1">MK746103.1</a> accession id. Also, note there are now six entries due to six-frame translation.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">&gt;MK746103.1|1868221|7_1 Porcine circovirus 3 strain PCV3/CNF/Xinjiang-160/2018, complete genome
+*YYPAPRNPDPRRSVGRKSGIPLWMLRTV*VDIPGSG**SGLVF*CRRTGTG*LSFCGAT
+SVLKIRTFIVILF*VRRESPKHRWCFTINNWTPTEWESIVECGGSIARYLIIGKEVGKSG
+TPHLQGYVNFKNKRRLSSVKRLPGFGRAHLEPARGSHKEASEYCKKEGDYLEIGEDSSSG
+TRSDLQAAARILTETAGNLTEVAEKMPAVFIRYGRGLRDFCGVMGLGKPRDFKTEVYVFI
+GPPGCGKTREACADAAARELQLYFKPRGPWWDGYNGEGAVILDDFYGWVPFDELLRIGDR
+YPLRVPVKGGFVNFVAKVLYITSNVVPEEWYSSENIRGKLEALFRRFTKVVCWGEGGVKK
+DMETVYPINY*FYLHLCTIIALGWGYLLGGWVGSPLATACRPHRSMWGMGSPHARAFTCA
+RTRSAAGARARGHGLSPPEGSDLYLLSLRERTCNESKLLWCRRSLSFQFFPGHKCSKAVL
+PIERWGHMC*AMGWVWRKRRGFVLGECW*FPPELVWG*SKGCVFF*KS*LYEWNFPHKGR
+LGAKCLWSRRRLDLWLCART*FLFAEPEKLQG*V*LSSLVSYNIQR*LQFPIRLGG**SG
+WRARACYSEGFQRI*RSWWSISLCSMCQLWAS**IVFFWHSAFCGVVVSLGGVFF*I*LC
+VSFWCRA
+&gt;MK746103.1|1868221|7_2 Porcine circovirus 3 strain PCV3/CNF/Xinjiang-160/2018, complete genome
+SITRHLGTRIHGGL*GEKVVSHYGCSAPCEWIYRAVDDEAASCFDAAGRGLDN*VFVVLR
+VS*R*GLLLSSYSRSGGKARNTGGVLR*TTGPRPSGNLLWSVEAV*RDTLLSAKRLEKAV
+PHTCKGT*ISRTKGDSAR*SAYPDLVGPIWSRRGGATKRPASIARKRGITSRLAKIPLRV
+PDRIFKQQLGF*RRRREI*LKLRRRCLQYLYAMGGVCVIFAG*WGWVNRVILKLKFMFLL
+VLQDAGKRGKLVRMRLRGNCSCISSHGGLGGMVIMGRVLLFWMIFMGGFHLMNC*ELGTG
+TL*GFLLRVGLLILWLRYYILLVMLYRRSGIHRRIFVESWRPCLGGSLRLFVGGRGG*RK
+TWRQCIQ*TIDFICTCVQLLRWGGGIYWEGGWAAP*PRLVAPTEACGGWGPHMRGRLPVP
+APEAQRERARGDTACRHRRGQIYIYCHLENGLVTNPNFFGAVEVCHSSFFRDINAPKQCS
+PLNGGVICVEPWGGSGEKEEALSWVSAGSSRQNWFGGEVKAVFSFRSHNFTSGTFRIRVV
+LEPSVCGPGAV*IYGCVPEHSFCLLSRRNYRAECNFHL*YLIIFKGNCSFPFV*AGNEVV
+GVPGLVILRGSNGYDVHGGVFLCVVCASCGPPNE*SSSGIAPSVASSSPWAGSSSEYSSV
+SHFGAG
+&gt;MK746103.1|1868221|7_3 Porcine circovirus 3 strain PCV3/CNF/Xinjiang-160/2018, complete genome
+VLPGTSEPGSTEVCREKKWYPIMDAPHRVSGYTGQWMMKRPRVLMPQDGDWITEFLWCYE
+CPEDKDFYCHPILGPEGKPETQVVFYDKQLDPDRVGIYCGVWRQYSEIPYYRQRGWKKRY
+PTLARVREFQEQKATQLGEALTRIWSGPSGAGEGEPQRGQRVLQERGGLPRDWRRFLFGY
+QIGSSSSSSDSDGDGGKSD*SCGEDACSIYTLWAGFA*FLRGDGVG*TA*F*N*SLCFYW
+SSRMRENAGSLCGCGCAGIAVVFQATGALVGWL*WGGCCYFG*FLWVGSI**IAENWGQV
+PSEGSC*GWVC*FCG*GIIYY**CCTGGVVFIGEYSWKVGGLV*EVH*GCLLGGGGGKER
+HGDSVSNKLLILFALVYNYCVGVGVFIGRVGGQPPSHGLSPPPKHVGDGVPTCEGVYLCP
+HPKRSGSAREGTRLVATGGVRFIFIVT*RTDL*RIQTSLVP*KSVIPVFSGT*MLQSSAP
+H*TVGSYVLSHGVGLEKKKRLCPG*VLVVPARIGLGVK*RLCFLLEVITLRVELSA*GSS
+WSQVFVVQAPSRSMAVCPNIVFVC*AGEITGLSVTFIFSIL*YSKVIAVSHSFRRVMKWL
+ACQGLLF*GVPTDMTFMVEYFFV*YVPAVGLLMNSLLLA*RLLWRRRLLGRGLLLNIALC
+LILVPG
+&gt;MK746103.1|1868221|7_4 Porcine circovirus 3 strain PCV3/CNF/Xinjiang-160/2018, complete genome
+PAPK*DTELYSEEDPAQGDDDATEGAMPEEDYSLGGPQLAHTTQRNTPP*TSYPLEPLRI
+TSPGTPTTSLPA*TNGKLQLPLNIIRY*R*KLHSAL*FLRLSKQKLCSGTQP*I*TAPGP
+QTLGSKTTLMRKVPLVKL*LLKENTAFTSPPNQFWRELPALTQDKASSFSPDPPHGSTHM
+TPPFNGEHCFGAFMSRKKLE*QTSTAPKKFGFVTSPFSK*Q*I*I*PLRWRQAVSPRARS
+RCASGAGTGKRPRMWGPHPPHASVGATSRG*GAAHPPSQ*IPPPQRNNCTQVQIKSIVYW
+IHCLHVFLYPPLPPTNNLSEPPKQGLQLSTNILR*IPLLRYNITSNI*YLSHKINKPTLN
+RNPQRVPVPNSQQFIKWNPPIKIIQNNSTLPIITIPPRPPWLEIQLQFPRSRIRTSFPRF
+PASWRTNKNINFSFKITRFTQPHHPAKITQTPPIAYKYCRHLLRNFSQISRRLRQNPSCC
+LKIRSGTRRGIFANLEVIPLFLAILAGLFVAPPRRLQMGPTKSG*ALHRAESPFVLEIHV
+PLQVWGTAFSNLFADNKVSRYTASTLHNRFPLGRGPVVYRKTPPVFRAFPPDLE*DDNKS
+PYLQDTRSTTKTQLSSPRPAASKHEAASSSTARYIHSHGAEHP*WDTTFSPYRPPWIRVP
+RCRVIL
+&gt;MK746103.1|1868221|7_5 Porcine circovirus 3 strain PCV3/CNF/Xinjiang-160/2018, complete genome
+PGTKMRHRAIFRRRPRPRRRRRHRRRYARRRLFIRRPTAGTYYTKKYSTMNVISVGTPQN
+NKPWHANHFITRLNEWETAITFEYYKILKMKVTLSPVISPAQQTKTMFGHTAIDLDGAWT
+TNTWLQDDPYAESSTRKVMTSKRKHSLYFTPKPILAGTTSTHPGQSLFFFSRPTPWLNTY
+DPTVQWGALLWSIYVPEKTGMTDFYGTKEVWIRYKSVL*VTININLTPPVATSRVPSRAL
+PLRFGCGHR*TPSHVGTPSPTCFGGGDKPWLGGCPPTLPINTPTPTQ*LYTSANKINSLL
+DTLSPCLSLPPPPPNKQP**TS*TRPPTFHEYSPMNTTPPVQHY**YIIP*PQN*QTHP*
+QEPSEGTCPQFSAIHQMEPTHKNHPK*QHPPHYNHPTKAPVA*NTTAIPAQPHPHKLPAF
+SRILEDQ*KHKLQF*NHAVYPTPSPRKNHANPAHSV*ILQASSPQLQSDFPPSPSESELL
+LEDPIWYPKRNLRQSRGNPPLSCNTRWPLCGSPSPAPDGPDQIRVSASPS*VAFCS*NSR
+TLASVGYRFFQPLCR**GISLYCLHTPQ*IPTRSGSSCLS*NTTCVSGFPSGPRIG*Q*K
+SLSSGHS*HHKNSVIQSPSCGIKTRGRFIIHCPVYPLTRCGASIMGYHFFSLQTSVDPGS
+EVPGNT
+&gt;MK746103.1|1868221|7_6 Porcine circovirus 3 strain PCV3/CNF/Xinjiang-160/2018, complete genome
+ARHQNETQSYIQKKTPPKETTTPQKALCQKKTIH*EAHSWHILHKEILHHERHIRWNPSE
+*QALARQPLHYPPKRMGNCNYL*IL*DTKDESYTQPCNFSGSANKNYVRAHSHRSRRRLD
+HKHLAPRRPLCGKFHS*SYDF*KKTQPLLHPQTNSGGNYQHSPRTKPLLFLQTHPMAQHI
+*PHRSMGSTALEHLCPGKNWNDRLLRHQRSLDSLQVRSLSDNKYKSDPSGGDKPCPLARA
+PAALRVRAQVNALACGDPIPHMLRWGRQAVARGLPTHPPNKYPHPNAIIVHKCK*NQ*FI
+GYTVSMSFFTPPSPQQTTLVNLLNKASNFPRIFSDEYHSSGTTLLVIYNTLATKLTNPPL
+TGTLRGYLSPILSNSSNGTHP*KSSKITAPSPL*PSHQGPRGLKYNCNSRAAASAQASRV
+FPHPGGPIKT*TSVLKSRGLPNPITPQKSRKPRP*RINTAGIFSATSVRFPAVSVRIRAA
+A*RSDLVPEEESSPISR*SPSFLQYSLASLWLPLAGSRWARPNPGKRFTELSRLLFLKFT
+YPCKCGVPLFPTSLPIIRYLAILPPHSTIDSHSVGVQLFIVKHHLCFGLSLRT*NRMTIK
+VLIFRTLVAPQKLSYPVPVLRHQNTRPLHHPLPGISTHTVRSIHNGIPLFLPTDLRGSGF
+RGAG*Y
+</code></pre></div><h2 id="host-file">Host File</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--host</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s host indexed FASTA file used for host screening. By default we provide an indexed version of the human reference genome.</td>
+</tr>
+</tbody>
+</table>
+<p>The ViroMatch pipeline performs host screening &mdash; i.e. filters out reads based on identity to a reference host genome. All reads are host screened prior to viral (viralfna/viralfaa) assessment and NCBI nt/nr validation. If one read in a read-pair maps to a virus and the other maps to the host (e.g. an integrated virus), we want to remove the host read but not the viral hit; therefore, reads are aligned in single-end mode to the host genome.</p>
+<p>The <code>--host</code> argument points to the path where ViroMatch&rsquo;s host genome is installed on your system. ViroMatch provides an indexed version of the human genome.</p>
+<p>Within the larger ViroMatch command, the <code>--host</code> argument for the host reference would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --host /databases/host/GRCh38_latest_genomic.fna
+</code></pre></div><p>Although we are pointing to the FASTA file in the above command, the corresponding indexed files should also be present on your system. For example, <code>/databases/host/GRCh38_latest_genomic.fna</code> should have the following files located along with the FASTA file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">/databases/host/GRCh38_latest_genomic.fna
+/databases/host/GRCh38_latest_genomic.fna.amb
+/databases/host/GRCh38_latest_genomic.fna.ann
+/databases/host/GRCh38_latest_genomic.fna.bwt
+/databases/host/GRCh38_latest_genomic.fna.pac
+/databases/host/GRCh38_latest_genomic.fna.sa
+</code></pre></div><p>If you are not screening human but rather a different host genome, you will need to index the reference genome FASTA file yourself using the version of <a href="http://bio-bwa.sourceforge.net/">BWA-MEM</a> included in the ViroMatch Docker image.</p>
+<p>First, create an interactive session using the ViroMatch Docker image. You will want to map the volume that contains your reference FASTA so Docker can see it. On your computer, change directory to where your reference FASTA file resides, then open the interactive session like so.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>container <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>run <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>-it <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>-v <span style="color:#e6db74">${</span>PWD<span style="color:#e6db74">}</span>:/reference <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>twylie/viromatch:latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>zsh
+</code></pre></div><p>Once inside the interactive session, change to the directory where the reference FASTA file resides and index the reference FASTA using BWA.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /reference
+bwa index example_reference.fasta
+</code></pre></div><p>Finally, you will pass <code>--host</code> the full path to the newly indexed reference FASTA file.</p>
+
+<div class="notices note" ><p>If you are going to index your own host genome, make sure to use the version of BWA in the ViroMatch Docker image, as that is the version used for mapping within the pipeline. Using different versions of BWA to index and map can result in odd behavior.</p>
+</div>
+
+<h2 id="adaptor-file">Adaptor File</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--adaptor</code></td>
+<td align="center">file path</td>
+<td>Path to a file with adapter sequences, one per line, used for read trimming.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>--adaptor</code> argument takes a qualified path to an adaptor file which will be used during the trimming phase of ViroMatch.</p>
+<p>Within the larger ViroMatch command, the <code>--adaptor</code> argument for the adaptor file would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --adaptor /databases/adaptor/adaptor.fqtrim
+</code></pre></div><p>The adaptor file is simply a text file listing the adaptor sequences you wish to use for trimming.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">AGATCGGAAGAGCACA
+TGCTCTTCCGATCT
+GTTTCCCAGTCACGATA
+TATCGTGACTGGGAAAC
+</code></pre></div><p>ViroMatch uses <code>fqtrim</code> for trimming and the <code>--adaptor</code> file is passed directly to <code>fqtrim</code>. To learn more about <code>fqtrim</code> and its adaptor file format, take a look <a href="https://ccb.jhu.edu/software/fqtrim/">here</a>, specifically the <code>-f &lt;filename&gt;</code> usage statement.</p>
+
+<div class="notices note" ><p>You will need to replace the adaptor file included in the Globus database download with a version specific for your sequence data and how it was produced &mdash; e.g. library prep, adaptors, etc.</p>
+</div>
+
+<h2 id="taxid-file">Taxid File</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--taxid</code></td>
+<td align="center">file path</td>
+<td>Path to ViroMatch&rsquo;s taxonomy database. This file provides NCBI-based taxonomy and lineages based on NCBI taxon ids.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>--taxid</code> argument takes a qualified path to ViroMatch&rsquo;s taxonomy file which will be used to define taxonomies for reads.</p>
+<p>Within the larger ViroMatch command, the <code>--taxid</code> argument for the adaptor file would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --taxid /databases/taxonomy/taxonomy.tsv
+</code></pre></div><p>The <code>--taxid</code> file is a tab-delimited file that has mappings among NCBI taxon ids. Given a taxon id, we may recursively walk through all associated ids and construct the lineage for a given taxon id.</p>
+<p>For example, take the following refernce genome:</p>
+<p><a href="https://www.ncbi.nlm.nih.gov/nuccore/NZ_CP035952.1">Pseudomonas sp. SNU WT1 chromosome, complete genome</a></p>
+<p>which has <code>2518644</code> as the taxon id. Resolving this taxon id through the <code>taxonomy.tsv</code> file gives us the full lineage of this reference genome.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">cellular organisms --&gt; Bacteria --&gt; Proteobacteria --&gt; Gammaproteobacteria --&gt; Pseudomonadales --&gt; Pseudomonadaceae --&gt; Pseudomonas --&gt; unclassified Pseudomonas --&gt; Pseudomonas sp. SNU WT1
+</code></pre></div><p>ViroMatch performs automatic taxonomic lookup for all candidate viral reads throughout the pipeline.</p>
+<h2 id="wustlconfig-file">Wustlconfig File</h2>
+
+<div class="notices warning" ><p>These options are only available to those running ViroMatch at Washington University School of Medicine through the <strong>compute1</strong> high performance computing server.</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th align="center">Argument</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>--wustlconfig</code></td>
+<td align="center">file path</td>
+<td>Path to a YAML configuration file used for WUSTL LSF job parallel processing. Variables provided in this file are used for LSF job submission configuration.</td>
+</tr>
+</tbody>
+</table>
+<p>We provide <code>--wustlconfig</code> the full path to a YAML configuration file.</p>
+<p>Within the larger ViroMatch command, the <code>--wustlconfig</code> argument for the YAML file would look something like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">viromatch --wustlconfig run.yaml
+</code></pre></div><p>The configuration file contains several parameters related to running parallel jobs on the WashU <strong>compute1</strong> server. A single configuration file may be used to launch many instances of the ViroMatch pipeline, provided all of the sequence files are within directories covered by the Docker volumes list. A typical configuration file looks like this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker:
+  image: <span style="color:#e6db74">&#39;twylie/viromatch:latest&#39;</span>
+  volumes:
+    - <span style="color:#e6db74">&#39;/storage1/fs1/tnwylie_lab/Active/viroMatchDatabases:/storage1/fs1/tnwylie_lab/Active/viroMatchDatabases&#39;</span>
+    - <span style="color:#e6db74">&#39;/storage1/fs1/twylie/Active/redoPP:/storage1/fs1/twylie/Active/redoPP&#39;</span>
+    - <span style="color:#e6db74">&#39;/storage1/fs1/twylie/RAW_DATA:/storage1/fs1/twylie/RAW_DATA&#39;</span>
+lsf:
+  memory: <span style="color:#e6db74">&#39;16G&#39;</span>
+  cores: <span style="color:#e6db74">&#39;150&#39;</span>
+  local cores: <span style="color:#e6db74">&#39;1&#39;</span>
+  compute group: <span style="color:#e6db74">&#39;compute-kwylie&#39;</span>
+  queue: <span style="color:#e6db74">&#39;general&#39;</span>
+  latency wait: <span style="color:#e6db74">&#39;100&#39;</span>
+  restart times: <span style="color:#e6db74">&#39;3&#39;</span>
+  ignore hosts:
+    - <span style="color:#e6db74">&#39;compute1-exec-67.ris.wustl.edu&#39;</span>
+    - <span style="color:#e6db74">&#39;compute1-exec-117.ris.wustl.edu&#39;</span>
+    - <span style="color:#e6db74">&#39;compute1-exec-102.ris.wustl.edu&#39;</span>
+</code></pre></div><p>The configuration file is used only for sub-process (children) jobs submitted to LSF from the parent ViroMatch job.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">docker/image</td>
+<td align="center">Required</td>
+<td>Name of the ViroMatch Docker image to use for sub-processing.</td>
+</tr>
+<tr>
+<td align="center">docker/volumes</td>
+<td align="center">Required</td>
+<td>A list of all of the Docker volume mappings that will be needed for sub-processing.</td>
+</tr>
+<tr>
+<td align="center">lsf/memory</td>
+<td align="center">Required</td>
+<td>Request the minimum amount of memory required for sub-processing.</td>
+</tr>
+<tr>
+<td align="center">lsf/cores</td>
+<td align="center">Required</td>
+<td>How many cores to use at one time for parallel sub-processing.</td>
+</tr>
+<tr>
+<td align="center">lsf/local cores</td>
+<td align="center">Required</td>
+<td>How many local cores to address per each individual LSF sub-process job.</td>
+</tr>
+<tr>
+<td align="center">lsf/compute group</td>
+<td align="center">Required</td>
+<td>LSF compute group name.</td>
+</tr>
+<tr>
+<td align="center">lsf/queue</td>
+<td align="center">Required</td>
+<td>LSF submission queue name.</td>
+</tr>
+<tr>
+<td align="center">lsf/latency wait</td>
+<td align="center">Required</td>
+<td>Time in seconds for how long Snakemake should wait for latent files. Useful for high latency cluster systems.</td>
+</tr>
+<tr>
+<td align="center">lsf/restart times</td>
+<td align="center">Required</td>
+<td>How many times Snakemake should attempt to restart a failed sub-process.</td>
+</tr>
+<tr>
+<td align="center">lsf/ignore hosts</td>
+<td align="center">Optional</td>
+<td>Some LSF execution nodes may be problematic. This list tells LSF to ignore these hosts when submitting sub-processes.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/viromatch/overview/tools/" title="Third-Party Tools"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/viromatch/overview/best_hit_logic/" title="Best Hit Logic" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/viromatch/js/clipboard.min.js?1606160050"></script>
+    <script src="/viromatch/js/perfect-scrollbar.min.js?1606160050"></script>
+    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1606160050"></script>
+    <script src="/viromatch/js/jquery.sticky.js?1606160050"></script>
+    <script src="/viromatch/js/featherlight.min.js?1606160050"></script>
+    <script src="/viromatch/js/highlight.pack.js?1606160050"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1606160050"></script>
+    <script src="/viromatch/js/learn.js?1606160050"></script>
+    <script src="/viromatch/js/hugo-learn.js?1606160050"></script>
+    
+    
+
+  </body>
+</html>
