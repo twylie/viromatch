@@ -12,21 +12,21 @@
     <title>Home :: ViroMatch</title>
 
     
-    <link href="/viromatch/css/nucleus.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/fontawesome-all.min.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/hybrid.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/featherlight.min.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/perfect-scrollbar.min.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/auto-complete.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/atom-one-dark-reasonable.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/theme.css?1606160049" rel="stylesheet">
-    <link href="/viromatch/css/hugo-theme.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/nucleus.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/fontawesome-all.min.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/hybrid.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/featherlight.min.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/perfect-scrollbar.min.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/auto-complete.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/atom-one-dark-reasonable.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/theme.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/hugo-theme.css?1606183344" rel="stylesheet">
     
-    <link href="/viromatch/css/theme-red.css?1606160049" rel="stylesheet">
+    <link href="/viromatch/css/theme-red.css?1606183344" rel="stylesheet">
     
     
 
-    <script src="/viromatch/js/jquery-3.3.1.min.js?1606160049"></script>
+    <script src="/viromatch/js/jquery-3.3.1.min.js?1606183344"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -127,14 +127,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/viromatch/js/lunr.min.js?1606160049"></script>
-<script type="text/javascript" src="/viromatch/js/auto-complete.js?1606160049"></script>
+<script type="text/javascript" src="/viromatch/js/lunr.min.js?1606183344"></script>
+<script type="text/javascript" src="/viromatch/js/auto-complete.js?1606183344"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/twylie.github.io\/viromatch\/";
     
 </script>
-<script type="text/javascript" src="/viromatch/js/search.js?1606160049"></script>
+<script type="text/javascript" src="/viromatch/js/search.js?1606183344"></script>
 
     
   </div>
@@ -934,6 +934,55 @@
 </blockquote>
 <h3 id="viral-sequence-identification">Viral Sequence Identification</h3>
 <p>The <strong>ViroMatch</strong> workflow incorporates both nucleotide and translated amino acid sequence alignment against a comprehensive database of viral reference genomes, which allows us the sensitivity to detect highly conserved and divergent viral sequences. Specifically, metagenomic sequences are first screened for putative viral reads by nucleotide alignment with BWA-MEM and translated alignment with Diamond against a database of viral genomes (downloaded from NCBI). This first screen is fast, but the hits include many false positives. Therefore, the putative viral hits are then aligned to the comprehensive NCBI nt nucleotide database using BWA-MEM and the comprehensive NCBI nr protein database using Diamond. Only sequences with an unambiguous alignment to a viral reference are counted as viral hits. Ambiguous hits (those that have alignments with similar scores to viruses and human, bacteria, etc.) are not counted. Ambiguous hits include those that map to repetitive regions that are not suitable for determining virus positivity. This pipeline has been used primarily for analysis of vertebrate viruses, including human viruses found in clinical samples.</p>
+<h3 id="site-map">Site Map</h3>
+<ul>
+<li>
+<p><a href="https://twylie.github.io/viromatch/quick_start/">1. Quick Start</a></p>
+<ul>
+<li><a href="https://twylie.github.io/viromatch/quick_start/install_and_execution/">Installation and Pipeline Execution</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://twylie.github.io/viromatch/download_and_install/">2. Download and Installation</a></p>
+<ul>
+<li><a href="https://twylie.github.io/viromatch/download_and_install/prerequisites/">Prerequisites</a></li>
+<li><a href="https://twylie.github.io/viromatch/download_and_install/docker/">Docker</a></li>
+<li><a href="https://twylie.github.io/viromatch/download_and_install/download_viromatch/">Download ViroMatch</a></li>
+<li><a href="https://twylie.github.io/viromatch/download_and_install/databases/">Databases</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://twylie.github.io/viromatch/execution/">3. Running ViroMatch</a></p>
+<ul>
+<li><a href="https://twylie.github.io/viromatch/execution/mapping_volumes/">Mapping Docker Volumes</a></li>
+<li><a href="https://twylie.github.io/viromatch/execution/interactive_docker/">Interactive Docker</a></li>
+<li><a href="https://twylie.github.io/viromatch/execution/cli_docker/">Command Line Docker</a></li>
+<li><a href="https://twylie.github.io/viromatch/execution/cli_args/">Command Line Arguments</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://twylie.github.io/viromatch/overview/">4. Pipeline Overview</a></p>
+<ul>
+<li><a href="https://twylie.github.io/viromatch/overview/summary/">Pipeline Summary</a></li>
+<li><a href="https://twylie.github.io/viromatch/overview/snakemake/">Snakemake</a></li>
+<li><a href="https://twylie.github.io/viromatch/overview/steps/">Steps in the Pipeline</a></li>
+<li><a href="https://twylie.github.io/viromatch/overview/tools/">Third-Party Tools</a></li>
+<li><a href="https://twylie.github.io/viromatch/overview/file_types/">Input File Types</a></li>
+<li><a href="https://twylie.github.io/viromatch/overview/best_hit_logic/">Best Hit Logic</a></li>
+<li><a href="https://twylie.github.io/viromatch/overview/reports/">Reports and Output Files</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://twylie.github.io/viromatch/project_info/">5. Project Info</a></p>
+<ul>
+<li><a href="https://twylie.github.io/viromatch/project_info/version/">Version</a></li>
+<li><a href="https://twylie.github.io/viromatch/project_info/authors/">Authors</a></li>
+<li><a href="https://twylie.github.io/viromatch/project_info/license/">License</a></li>
+<li><a href="https://twylie.github.io/viromatch/project_info/funding/">Funding</a></li>
+<li><a href="https://twylie.github.io/viromatch/project_info/disclaimer/">Disclaimer</a></li>
+</ul>
+</li>
+</ul>
 	
   
         
@@ -1411,16 +1460,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/viromatch/js/clipboard.min.js?1606160050"></script>
-    <script src="/viromatch/js/perfect-scrollbar.min.js?1606160050"></script>
-    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1606160050"></script>
-    <script src="/viromatch/js/jquery.sticky.js?1606160050"></script>
-    <script src="/viromatch/js/featherlight.min.js?1606160050"></script>
-    <script src="/viromatch/js/highlight.pack.js?1606160050"></script>
+    <script src="/viromatch/js/clipboard.min.js?1606183344"></script>
+    <script src="/viromatch/js/perfect-scrollbar.min.js?1606183344"></script>
+    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1606183344"></script>
+    <script src="/viromatch/js/jquery.sticky.js?1606183344"></script>
+    <script src="/viromatch/js/featherlight.min.js?1606183344"></script>
+    <script src="/viromatch/js/highlight.pack.js?1606183344"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1606160050"></script>
-    <script src="/viromatch/js/learn.js?1606160050"></script>
-    <script src="/viromatch/js/hugo-learn.js?1606160050"></script>
+    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1606183344"></script>
+    <script src="/viromatch/js/learn.js?1606183344"></script>
+    <script src="/viromatch/js/hugo-learn.js?1606183344"></script>
     
     
 
