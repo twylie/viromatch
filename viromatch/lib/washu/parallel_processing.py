@@ -29,6 +29,7 @@ class ParallelProcessing():
         #   cores: '100'
         #   local cores: '1'
         #   compute group: 'compute-kwylie'
+        #   results dir: '/tmp/foo/'
         #   queue: 'general'
         #   restart times: '3'
         #   latency wait: '100'
@@ -67,6 +68,11 @@ class ParallelProcessing():
             print(error)
             sys.exit()
 
+        if 'results dir' not in args['lsf'].keys():
+            error = '\nError: --wustlconfig requires {}\n'.format('[lsf: results dir]')
+            print(error)
+            sys.exit()
+
         if 'cores' not in args['lsf'].keys():
             error = '\nError: --wustlconfig requires {}\n'.format('[lsf: cores]')
             print(error)
@@ -102,6 +108,7 @@ class ParallelProcessing():
         self.arguments.docker_image = args['docker']['image']
         self.arguments.docker_volumes = args['docker']['volumes']
         self.arguments.lsf_memory = args['lsf']['memory']
+        self.arguments.results_dir = args['lsf']['results dir']
         self.arguments.lsf_cores = args['lsf']['cores']
         self.arguments.lsf_local_cores = args['lsf']['local cores']
         self.arguments.lsf_compute_group = args['lsf']['compute group']
@@ -111,8 +118,20 @@ class ParallelProcessing():
         self.arguments.docker_submitter = self.arguments.outdir + 'lsf_submitter.py'
         self.arguments.lsf_logdir = self.arguments.outdir + 'lsf_logs/'
 
+        # Create the lsf log directory.
+
         if os.path.isdir(self.arguments.lsf_logdir) is False:
             os.mkdir(self.arguments.lsf_logdir, 0o755)
+
+        # Create the symbolic link for the viromatch_results directory. We use this to write
+        # Snakemake pipeline files to fast-disk access while pointing the results files to slower,
+        # larger disk space. Should help with latency issues related to Snakemake's file monitoring
+        # processes.
+
+        results_dir_link = self.arguments.outdir + 'viromatch_results'
+
+        if os.path.isdir(results_dir_link) is False:
+            os.symlink(self.arguments.results_dir, results_dir_link)
 
         # Passed, so cat the LSF config file to the main Snakemake config file.
 
