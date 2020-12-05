@@ -12,21 +12,21 @@
     <title>Input File Types :: ViroMatch</title>
 
     
-    <link href="/viromatch/css/nucleus.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/fontawesome-all.min.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/hybrid.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/featherlight.min.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/perfect-scrollbar.min.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/auto-complete.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/atom-one-dark-reasonable.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/theme.css?1606183344" rel="stylesheet">
-    <link href="/viromatch/css/hugo-theme.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/nucleus.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/fontawesome-all.min.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/hybrid.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/featherlight.min.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/perfect-scrollbar.min.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/auto-complete.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/atom-one-dark-reasonable.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/theme.css?1607130781" rel="stylesheet">
+    <link href="/viromatch/css/hugo-theme.css?1607130781" rel="stylesheet">
     
-    <link href="/viromatch/css/theme-red.css?1606183344" rel="stylesheet">
+    <link href="/viromatch/css/theme-red.css?1607130781" rel="stylesheet">
     
     
 
-    <script src="/viromatch/js/jquery-3.3.1.min.js?1606183344"></script>
+    <script src="/viromatch/js/jquery-3.3.1.min.js?1607130781"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -127,14 +127,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/viromatch/js/lunr.min.js?1606183344"></script>
-<script type="text/javascript" src="/viromatch/js/auto-complete.js?1606183344"></script>
+<script type="text/javascript" src="/viromatch/js/lunr.min.js?1607130781"></script>
+<script type="text/javascript" src="/viromatch/js/auto-complete.js?1607130781"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/twylie.github.io\/viromatch\/";
     
 </script>
-<script type="text/javascript" src="/viromatch/js/search.js?1606183344"></script>
+<script type="text/javascript" src="/viromatch/js/search.js?1607130781"></script>
 
     
   </div>
@@ -1524,6 +1524,7 @@ TATCGTGACTGGGAAAC
     - <span style="color:#e6db74">&#39;/storage1/fs1/twylie/RAW_DATA:/storage1/fs1/twylie/RAW_DATA&#39;</span>
 lsf:
   memory: <span style="color:#e6db74">&#39;16G&#39;</span>
+  results dir: <span style="color:#e6db74">&#39;/storage1/fs1/twylie/Active/redoPP/results&#39;</span>
   cores: <span style="color:#e6db74">&#39;150&#39;</span>
   local cores: <span style="color:#e6db74">&#39;1&#39;</span>
   compute group: <span style="color:#e6db74">&#39;compute-kwylie&#39;</span>
@@ -1558,6 +1559,11 @@ lsf:
 <td align="center">lsf/memory</td>
 <td align="center">Required</td>
 <td>Request the minimum amount of memory required for sub-processing.</td>
+</tr>
+<tr>
+<td align="center">lsf/results dir</td>
+<td align="center">Required</td>
+<td>Where the <code>viromatch_results/</code> directory will be written. This directory will be symbolically linked within the <code>--outdir</code> directory.</td>
 </tr>
 <tr>
 <td align="center">lsf/cores</td>
@@ -1596,6 +1602,7 @@ lsf:
 </tr>
 </tbody>
 </table>
+<p>When running ViroMatch in parallel mode at Washington University School of Medicine, it is highly recommended to run the pipeline and its output on <strong>scratch1</strong> disk space while writing the larger, computationally heavy output files on <strong>storage1</strong> disk space. This ensures that Snakemake and its underlying process-monitoring code has access to fast disk space while the larger intermediate files created by the pipeline write to slower disks with more space. The <code>results dir</code> field in the config file should point to where you wish to write the larger output on <strong>storage1</strong>. A symbolic link will point to this area when the pipeline is executed on <strong>scratch1</strong> space, within the <code>--outdir</code> directory under the <code>viromatch_results/</code> symlink.</p>
 
 
 
@@ -2090,16 +2097,16 @@ lsf:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/viromatch/js/clipboard.min.js?1606183344"></script>
-    <script src="/viromatch/js/perfect-scrollbar.min.js?1606183344"></script>
-    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1606183344"></script>
-    <script src="/viromatch/js/jquery.sticky.js?1606183344"></script>
-    <script src="/viromatch/js/featherlight.min.js?1606183344"></script>
-    <script src="/viromatch/js/highlight.pack.js?1606183344"></script>
+    <script src="/viromatch/js/clipboard.min.js?1607130781"></script>
+    <script src="/viromatch/js/perfect-scrollbar.min.js?1607130781"></script>
+    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1607130781"></script>
+    <script src="/viromatch/js/jquery.sticky.js?1607130781"></script>
+    <script src="/viromatch/js/featherlight.min.js?1607130781"></script>
+    <script src="/viromatch/js/highlight.pack.js?1607130781"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1606183344"></script>
-    <script src="/viromatch/js/learn.js?1606183344"></script>
-    <script src="/viromatch/js/hugo-learn.js?1606183344"></script>
+    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1607130781"></script>
+    <script src="/viromatch/js/learn.js?1607130781"></script>
+    <script src="/viromatch/js/hugo-learn.js?1607130781"></script>
     
     
 

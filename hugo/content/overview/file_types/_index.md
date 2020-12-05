@@ -566,6 +566,7 @@ docker:
     - '/storage1/fs1/twylie/RAW_DATA:/storage1/fs1/twylie/RAW_DATA'
 lsf:
   memory: '16G'
+  results dir: '/storage1/fs1/twylie/Active/redoPP/results'
   cores: '150'
   local cores: '1'
   compute group: 'compute-kwylie'
@@ -580,15 +581,18 @@ lsf:
 
 The configuration file is used only for sub-process (children) jobs submitted to LSF from the parent ViroMatch job.
 
-| Parameter         | Type     | Description                                                                                                           |
-|:-----------------:|:--------:|-----------------------------------------------------------------------------------------------------------------------|
-| docker/image      | Required | Name of the ViroMatch Docker image to use for sub-processing.                                                         |
-| docker/volumes    | Required | A list of all of the Docker volume mappings that will be needed for sub-processing.                                   |
-| lsf/memory        | Required | Request the minimum amount of memory required for sub-processing.                                                     |
-| lsf/cores         | Required | How many cores to use at one time for parallel sub-processing.                                                        |
-| lsf/local cores   | Required | How many local cores to address per each individual LSF sub-process job.                                              |
-| lsf/compute group | Required | LSF compute group name.                                                                                               |
-| lsf/queue         | Required | LSF submission queue name.                                                                                            |
-| lsf/latency wait  | Required | Time in seconds for how long Snakemake should wait for latent files. Useful for high latency cluster systems.         |
-| lsf/restart times | Required | How many times Snakemake should attempt to restart a failed sub-process.                                              |
-| lsf/ignore hosts  | Optional | Some LSF execution nodes may be problematic. This list tells LSF to ignore these hosts when submitting sub-processes. |
+| Parameter           | Type       | Description                                                                                                                           |
+| :-----------------: | :--------: | -----------------------------------------------------------------------------------------------------------------------               |
+| docker/image        | Required   | Name of the ViroMatch Docker image to use for sub-processing.                                                                         |
+| docker/volumes      | Required   | A list of all of the Docker volume mappings that will be needed for sub-processing.                                                   |
+| lsf/memory          | Required   | Request the minimum amount of memory required for sub-processing.                                                                     |
+| lsf/results dir     | Required   | Where the `viromatch_results/` directory will be written. This directory will be symbolically linked within the `--outdir` directory. |
+| lsf/cores           | Required   | How many cores to use at one time for parallel sub-processing.                                                                        |
+| lsf/local cores     | Required   | How many local cores to address per each individual LSF sub-process job.                                                              |
+| lsf/compute group   | Required   | LSF compute group name.                                                                                                               |
+| lsf/queue           | Required   | LSF submission queue name.                                                                                                            |
+| lsf/latency wait    | Required   | Time in seconds for how long Snakemake should wait for latent files. Useful for high latency cluster systems.                         |
+| lsf/restart times   | Required   | How many times Snakemake should attempt to restart a failed sub-process.                                                              |
+| lsf/ignore hosts    | Optional   | Some LSF execution nodes may be problematic. This list tells LSF to ignore these hosts when submitting sub-processes.                 |
+
+When running ViroMatch in parallel mode at Washington University School of Medicine, it is highly recommended to run the pipeline and its output on **scratch1** disk space while writing the larger, computationally heavy output files on **storage1** disk space. This ensures that Snakemake and its underlying process-monitoring code has access to fast disk space while the larger intermediate files created by the pipeline write to slower disks with more space. The `results dir` field in the config file should point to where you wish to write the larger output on **storage1**. A symbolic link will point to this area when the pipeline is executed on **scratch1** space, within the `--outdir` directory under the `viromatch_results/` symlink.
