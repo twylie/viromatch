@@ -12,21 +12,21 @@
     <title>Reports and Output Files :: ViroMatch</title>
 
     
-    <link href="/viromatch/css/nucleus.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/fontawesome-all.min.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/hybrid.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/featherlight.min.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/perfect-scrollbar.min.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/auto-complete.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/atom-one-dark-reasonable.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/theme.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/hugo-theme.css?1607305476" rel="stylesheet">
+    <link href="/viromatch/css/nucleus.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/fontawesome-all.min.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/hybrid.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/featherlight.min.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/perfect-scrollbar.min.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/auto-complete.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/atom-one-dark-reasonable.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/theme.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/hugo-theme.css?1607382646" rel="stylesheet">
     
-    <link href="/viromatch/css/theme-red.css?1607305476" rel="stylesheet">
+    <link href="/viromatch/css/theme-red.css?1607382646" rel="stylesheet">
     
     
 
-    <script src="/viromatch/js/jquery-3.3.1.min.js?1607305476"></script>
+    <script src="/viromatch/js/jquery-3.3.1.min.js?1607382646"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -127,14 +127,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/viromatch/js/lunr.min.js?1607305476"></script>
-<script type="text/javascript" src="/viromatch/js/auto-complete.js?1607305476"></script>
+<script type="text/javascript" src="/viromatch/js/lunr.min.js?1607382646"></script>
+<script type="text/javascript" src="/viromatch/js/auto-complete.js?1607382646"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/twylie.github.io\/viromatch\/";
     
 </script>
-<script type="text/javascript" src="/viromatch/js/search.js?1607305476"></script>
+<script type="text/javascript" src="/viromatch/js/search.js?1607382646"></script>
 
     
   </div>
@@ -1060,7 +1060,7 @@ viromatch_results/
 </tbody>
 </table>
 <h2 id="the-viromatch_results-directory">The viromatch_results/ Directory</h2>
-<p>This directory contains all of the ancillary directories and files ViroMatch writes during pipeline processing. Each rule (step) in the pipeline will have its own directory written here. The directory strucuture of a successful run will looks as follows.</p>
+<p>This directory contains all of the ancillary directories and files ViroMatch writes during pipeline processing. Each rule (step) in the pipeline will have its own directory written here. The directory structure of a successful run will looks as follows.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">viromatch_results/.viromatch/
 viromatch_results/blank_eval_filter_low_complexity/
 viromatch_results/blank_eval_validate_trans_nuc_nr/
@@ -1130,7 +1130,7 @@ viromatch_results/viral_nuc_mapping/INPUT.r2.viral.sam.cmd
 </code></pre></div><p>One of the logs simply lists the rules/steps in the pipeline in order of execution defined by Snakemake, the other log is written during actual pipeline line execution. You will see the order of execution here for each rule, the associated directory being writte under <code>viromatch_results/</code>, input and output files for the rule, and the specific shell script being used for execution.</p>
 <h2 id="sanity-files">Sanity Files</h2>
 
-<div class="notices warning" ><p>By deafult, ViroMatch removes temporary files generated during execution when they are no longer needed for downstream processing. This is done to save disk space, as many of the temporary files can be large in size. Therefore, not all of the files generated during processing will be under <code>viromatch_results/</code> unless the user specifies the <code>--keep</code> argument when executing the pipeline.</p>
+<div class="notices warning" ><p>By default, ViroMatch removes temporary files generated during execution when they are no longer needed for downstream processing. This is done to save disk space, as many of the temporary files can be large in size. Therefore, not all of the files generated during processing will be under <code>viromatch_results/</code> unless the user specifies the <code>--keep</code> argument when executing the pipeline.</p>
 </div>
 
 <p>Using the <code>--keep</code> switch when executing the pipeline retains <em>all</em> of the files generated during processing. There are several useful &ldquo;sanity&rdquo; files that are generated within the pipeline , but be warned they can be very large in size!</p>
@@ -1624,7 +1624,7 @@ REPORT.trans_nuc_ambiguous_counts.txt
 </tr>
 <tr>
 <td align="center">Lineage (R1 + R2)</td>
-<td>The lineage section provides a breakdown of viral read counts at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are read count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+<td>The lineage section provides a breakdown of viral read counts at the full lineage level &mdash; i.e. all taxonomic categories as provided by NCBI. Fields for this table are read count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
 </tr>
 <tr>
 <td align="center">Genus (R1 + R2)</td>
@@ -1691,7 +1691,7 @@ REPORT.trans_nuc_ambiguous_counts.txt
 </tr>
 <tr>
 <td align="center">Lineage (R1 + R2)</td>
-<td>The lineage section provides a breakdown of viral translated read counts at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are read count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+<td>The lineage section provides a breakdown of viral translated read counts at the full lineage level &mdash; i.e. all taxonomic categories as provided by NCBI. Fields for this table are read count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
 </tr>
 <tr>
 <td align="center">Genus (R1 + R2)</td>
@@ -1777,7 +1777,7 @@ REPORT.trans_nuc_ambiguous_counts.txt
 </tr>
 <tr>
 <td align="center">Other Sequences Lineage (R1 + R2)</td>
-<td>The lineage section provides a breakdown of hit counts related to <em>other sequences</em> at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are hit count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+<td>The lineage section provides a breakdown of hit counts related to <em>other sequences</em> at the full lineage level &mdash; i.e. all taxonomic categories as provided by NCBI. Fields for this table are hit count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
 </tr>
 <tr>
 <td align="center">Other Sequences Lineage (R1)</td>
@@ -1793,7 +1793,7 @@ REPORT.trans_nuc_ambiguous_counts.txt
 </tr>
 <tr>
 <td align="center">Unknown Lineage (R1 + R2)</td>
-<td>The lineage section provides a breakdown of hit counts related to <em>unknown</em> at the full lineage level &mdash; i.e. all taxomic categories as provided by NCBI. Fields for this table are hit count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
+<td>The lineage section provides a breakdown of hit counts related to <em>unknown</em> at the full lineage level &mdash; i.e. all taxonomic categories as provided by NCBI. Fields for this table are hit count, percent of reads represented, and full lineage. A cumulative total is also provided. For this section, counts are derived from both read pairs (R1 &amp; R2) combined.</td>
 </tr>
 <tr>
 <td align="center">Unknown Lineage (R1)</td>
@@ -2299,16 +2299,16 @@ REPORT.trans_nuc_ambiguous_counts.txt
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/viromatch/js/clipboard.min.js?1607305476"></script>
-    <script src="/viromatch/js/perfect-scrollbar.min.js?1607305476"></script>
-    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1607305476"></script>
-    <script src="/viromatch/js/jquery.sticky.js?1607305476"></script>
-    <script src="/viromatch/js/featherlight.min.js?1607305476"></script>
-    <script src="/viromatch/js/highlight.pack.js?1607305476"></script>
+    <script src="/viromatch/js/clipboard.min.js?1607382646"></script>
+    <script src="/viromatch/js/perfect-scrollbar.min.js?1607382646"></script>
+    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1607382646"></script>
+    <script src="/viromatch/js/jquery.sticky.js?1607382646"></script>
+    <script src="/viromatch/js/featherlight.min.js?1607382646"></script>
+    <script src="/viromatch/js/highlight.pack.js?1607382646"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1607305476"></script>
-    <script src="/viromatch/js/learn.js?1607305476"></script>
-    <script src="/viromatch/js/hugo-learn.js?1607305476"></script>
+    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1607382646"></script>
+    <script src="/viromatch/js/learn.js?1607382646"></script>
+    <script src="/viromatch/js/hugo-learn.js?1607382646"></script>
     
     
 

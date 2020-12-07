@@ -12,21 +12,21 @@
     <title>Steps in the Pipeline :: ViroMatch</title>
 
     
-    <link href="/viromatch/css/nucleus.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/fontawesome-all.min.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/hybrid.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/featherlight.min.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/perfect-scrollbar.min.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/auto-complete.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/atom-one-dark-reasonable.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/theme.css?1607305476" rel="stylesheet">
-    <link href="/viromatch/css/hugo-theme.css?1607305476" rel="stylesheet">
+    <link href="/viromatch/css/nucleus.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/fontawesome-all.min.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/hybrid.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/featherlight.min.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/perfect-scrollbar.min.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/auto-complete.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/atom-one-dark-reasonable.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/theme.css?1607382646" rel="stylesheet">
+    <link href="/viromatch/css/hugo-theme.css?1607382646" rel="stylesheet">
     
-    <link href="/viromatch/css/theme-red.css?1607305476" rel="stylesheet">
+    <link href="/viromatch/css/theme-red.css?1607382646" rel="stylesheet">
     
     
 
-    <script src="/viromatch/js/jquery-3.3.1.min.js?1607305476"></script>
+    <script src="/viromatch/js/jquery-3.3.1.min.js?1607382646"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -127,14 +127,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/viromatch/js/lunr.min.js?1607305476"></script>
-<script type="text/javascript" src="/viromatch/js/auto-complete.js?1607305476"></script>
+<script type="text/javascript" src="/viromatch/js/lunr.min.js?1607382646"></script>
+<script type="text/javascript" src="/viromatch/js/auto-complete.js?1607382646"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/twylie.github.io\/viromatch\/";
     
 </script>
-<script type="text/javascript" src="/viromatch/js/search.js?1607305476"></script>
+<script type="text/javascript" src="/viromatch/js/search.js?1607382646"></script>
 
     
   </div>
@@ -1044,7 +1044,7 @@
 </a>
 
 <h2 id="steps-snakemake-rules">Steps (Snakemake Rules)</h2>
-<p>Here is a list of all of the steps/rules in ViroMatch&rsquo;s Snakefile, ordered by occurence; each step of the pipeline and its purpose is outlined in detail.</p>
+<p>Here is a list of all of the steps/rules in ViroMatch&rsquo;s Snakefile, ordered by occurrence; each step of the pipeline and its purpose is outlined in detail.</p>
 <h3 id="1-prep_fastq_files">1. prep_fastq_files</h3>
 <p>The pipeline accepts a uBAM file or paired FASTQ files as <code>--input</code> from the command line. This step prepares the input file for downstream processing. If a uBAM file is supplied, it is converted to paired FASTQ files. Paired FASTQ input files are simply linked into the output directory for processing.</p>
 <h3 id="2-trim_fastq_files">2. trim_fastq_files</h3>
@@ -1088,9 +1088,9 @@
 <h3 id="21-validate_nuc_nt_write_unmapped_sam">21. validate_nuc_nt_write_unmapped_sam</h3>
 <p>All of the split nt alignment BAM files are converted to SAM format for the unmapped reads in this step.</p>
 <h3 id="22-validate_nuc_nt_merge_r1_mapped_sam">22. validate_nuc_nt_merge_r1_mapped_sam</h3>
-<p>For the read-1 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline&rsquo;s downstreamn best hit logic evaluates reads by <em>read blocks</em>: blocks of hits for the same read id.</p>
+<p>For the read-1 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline&rsquo;s downstream best hit logic evaluates reads by <em>read blocks</em>: blocks of hits for the same read id.</p>
 <h3 id="23-validate_nuc_nt_merge_r2_mapped_sam">23. validate_nuc_nt_merge_r2_mapped_sam</h3>
-<p>For the read-2 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline&rsquo;s downstreamn best hit logic evaluates reads by <em>read blocks</em>: blocks of hits for the same read id.</p>
+<p>For the read-2 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline&rsquo;s downstream best hit logic evaluates reads by <em>read blocks</em>: blocks of hits for the same read id.</p>
 <h3 id="24-validate_nuc_nt_write_r1_unmapped_ids">24. validate_nuc_nt_write_r1_unmapped_ids</h3>
 <p>For the read-1 FASTQ reads, we require the read ids in list format for the candidate viral reads that were not mapped to NCBI nt. This step collects the read ids for NCBI nt unmapped reads.</p>
 <h3 id="25-validate_nuc_nt_write_r2_unmapped_ids">25. validate_nuc_nt_write_r2_unmapped_ids</h3>
@@ -1106,7 +1106,7 @@
 <h3 id="30-validate_trans_nuc_nr_merge_r1_mapped_tsv">30. validate_trans_nuc_nr_merge_r1_mapped_tsv</h3>
 <p>For the read-1 FASTQ reads, all of the split nr TSV files for the mapped reads are merged into a single TSV file that is sorted by read id names. The TSV file needs to be sorted by read names because the pipeline&rsquo;s downstreamn best hit logic evaluates reads by <em>read blocks</em>: blocks of hits for the same read id.</p>
 <h3 id="31-validate_trans_nuc_nr_merge_r2_mapped_tsv">31. validate_trans_nuc_nr_merge_r2_mapped_tsv</h3>
-<p>For the read-2 FASTQ reads, all of the split nr TSV files for the mapped reads are merged into a single TSV file that is sorted by read id names. The TSV file needs to be sorted by read names because the pipeline&rsquo;s downstreamn best hit logic evaluates reads by <em>read blocks</em>: blocks of hits for the same read id.</p>
+<p>For the read-2 FASTQ reads, all of the split nr TSV files for the mapped reads are merged into a single TSV file that is sorted by read id names. The TSV file needs to be sorted by read names because the pipeline&rsquo;s downstream best hit logic evaluates reads by <em>read blocks</em>: blocks of hits for the same read id.</p>
 <h3 id="32-nuc_nt_best_hit_filter_sam">32. nuc_nt_best_hit_filter_sam</h3>
 <p>In this step, the candidate viral reads that mapped to NCBI nt are evaluated. For each candidate read, all of the associated hits (read block) for the read are evaluated and a best representative hit is chosen. It is during this step that the pipeline writes sanity files which describe the pass/fail status for all of the hits evaluated. A SAM file is written for the chosen viral best hits.</p>
 <h3 id="33-trans_nuc_nr_best_hit_filter_tsv">33. trans_nuc_nr_best_hit_filter_tsv</h3>
@@ -1629,16 +1629,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/viromatch/js/clipboard.min.js?1607305476"></script>
-    <script src="/viromatch/js/perfect-scrollbar.min.js?1607305476"></script>
-    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1607305476"></script>
-    <script src="/viromatch/js/jquery.sticky.js?1607305476"></script>
-    <script src="/viromatch/js/featherlight.min.js?1607305476"></script>
-    <script src="/viromatch/js/highlight.pack.js?1607305476"></script>
+    <script src="/viromatch/js/clipboard.min.js?1607382646"></script>
+    <script src="/viromatch/js/perfect-scrollbar.min.js?1607382646"></script>
+    <script src="/viromatch/js/perfect-scrollbar.jquery.min.js?1607382646"></script>
+    <script src="/viromatch/js/jquery.sticky.js?1607382646"></script>
+    <script src="/viromatch/js/featherlight.min.js?1607382646"></script>
+    <script src="/viromatch/js/highlight.pack.js?1607382646"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1607305476"></script>
-    <script src="/viromatch/js/learn.js?1607305476"></script>
-    <script src="/viromatch/js/hugo-learn.js?1607305476"></script>
+    <script src="/viromatch/js/modernizr.custom-3.6.0.js?1607382646"></script>
+    <script src="/viromatch/js/learn.js?1607382646"></script>
+    <script src="/viromatch/js/hugo-learn.js?1607382646"></script>
     
     
 
