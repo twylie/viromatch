@@ -47,7 +47,7 @@ Results:
 
 ```plaintext
 REPOSITORY        TAG      IMAGE ID       CREATED     SIZE
-twylie/virmatch   latest   de2636b2ff1e   3 days ago  1.56GB
+twylie/viromatch   latest   de2636b2ff1e   3 days ago  1.56GB
 ```
 
 If you see something that looks similar to the above output, you've downloaded and registered the ViroMatch docker image on your system.

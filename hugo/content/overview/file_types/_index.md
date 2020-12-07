@@ -13,10 +13,10 @@ weight: 5
 
 ## FASTQ Files
 
-[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) is an extension of the veneral [FASTA](https://en.wikipedia.org/wiki/FASTA_format) sequence format first described by [P. Cock, et al](https://academic.oup.com/nar/article/38/6/1767/3112533). FASTQ combines sequence and quality information in the same file format. ViroMatch accepts paired FASTQ files --- i.e. two FASTQ files from the same sample with read-1 and read-2 pairs broken out, ordered by corresponding read pair ids --- as `--input` when running the pipeline.
+[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) is an extension of the venerable [FASTA](https://en.wikipedia.org/wiki/FASTA_format) sequence format first described by [P. Cock, et al](https://academic.oup.com/nar/article/38/6/1767/3112533). FASTQ combines sequence and quality information in the same file format. ViroMatch accepts paired FASTQ files --- i.e. two FASTQ files from the same sample with read-1 and read-2 pairs broken out, ordered by corresponding read pair ids --- as `--input` when running the pipeline.
 
 {{% notice note %}}
-For FASTQ support, ViroMatch requires that you pass two FASTQ files whose order retains correspondiong read pair ids. For example, read_1/1 and read_1/2 should be the first entries in the FASTQ files, respectively.
+For FASTQ support, ViroMatch requires that you pass two FASTQ files whose order retains corresponding read pair ids. For example, read_1/1 and read_1/2 should be the first entries in the FASTQ files, respectively.
 {{% /notice %}}
 
 Within the larger ViroMatch command, the `--input` argument for FASTQ files would look something like this.

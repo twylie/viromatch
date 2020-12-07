@@ -15,7 +15,7 @@ The following rulegraph was produced by Snakemake and shows the general directed
 
 ## Steps (Snakemake Rules)
 
-Here is a list of all of the steps/rules in ViroMatch's Snakefile, ordered by occurence; each step of the pipeline and its purpose is outlined in detail. 
+Here is a list of all of the steps/rules in ViroMatch's Snakefile, ordered by occurrence; each step of the pipeline and its purpose is outlined in detail. 
 
 ### 1. prep_fastq_files
 The pipeline accepts a uBAM file or paired FASTQ files as `--input` from the command line. This step prepares the input file for downstream processing. If a uBAM file is supplied, it is converted to paired FASTQ files. Paired FASTQ input files are simply linked into the output directory for processing.
@@ -102,11 +102,11 @@ All of the split nt alignment BAM files are converted to SAM format for the unma
 
 ### 22. validate_nuc_nt_merge_r1_mapped_sam
 
-For the read-1 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline's downstreamn best hit logic evaluates reads by _read blocks_: blocks of hits for the same read id.
+For the read-1 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline's downstream best hit logic evaluates reads by _read blocks_: blocks of hits for the same read id.
 
 ### 23. validate_nuc_nt_merge_r2_mapped_sam
 
-For the read-2 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline's downstreamn best hit logic evaluates reads by _read blocks_: blocks of hits for the same read id.
+For the read-2 FASTQ reads, all of the split nt SAM files for the mapped reads are merged into a single SAM file that is sorted by read id names. The SAM file needs to be sorted by read names because the pipeline's downstream best hit logic evaluates reads by _read blocks_: blocks of hits for the same read id.
 
 ### 24. validate_nuc_nt_write_r1_unmapped_ids
 
@@ -138,7 +138,7 @@ For the read-1 FASTQ reads, all of the split nr TSV files for the mapped reads a
 
 ### 31. validate_trans_nuc_nr_merge_r2_mapped_tsv
 
-For the read-2 FASTQ reads, all of the split nr TSV files for the mapped reads are merged into a single TSV file that is sorted by read id names. The TSV file needs to be sorted by read names because the pipeline's downstreamn best hit logic evaluates reads by _read blocks_: blocks of hits for the same read id.
+For the read-2 FASTQ reads, all of the split nr TSV files for the mapped reads are merged into a single TSV file that is sorted by read id names. The TSV file needs to be sorted by read names because the pipeline's downstream best hit logic evaluates reads by _read blocks_: blocks of hits for the same read id.
 
 ### 32. nuc_nt_best_hit_filter_sam
 

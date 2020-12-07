@@ -37,9 +37,9 @@ The `CONFIG.yaml` file stores all of the parameters required to run the ViroMatc
 
 ### Snakefile
 
-The `Snakefile` is technically _the pipeline_ in terms of code that defines and executes all of the steps in a specfic order. This file (along with the configuration file) are used by Snakemake to execute the pipeline. Please note that the Snakefile contains calls to other thirs-party executables --- e.g. BWA, Samtools, Diamond, etc. Also, ViroMatch specific code is also called in this manner. The Snakefile is essentially the _recipe_ or protocol for the ViroMatch pipeline.
+The `Snakefile` is technically _the pipeline_ in terms of code that defines and executes all of the steps in a specific order. This file (along with the configuration file) are used by Snakemake to execute the pipeline. Please note that the Snakefile contains calls to other third-party executables --- e.g. BWA, Samtools, Diamond, etc. Also, ViroMatch specific code is also called in this manner. The Snakefile is essentially the _recipe_ or protocol for the ViroMatch pipeline.
 
-Here is a list of all of the steps/rules in the Snakefile, ordered by occurence. See [Steps (Snakemake Rules)](https://twylie.github.io/viromatch/overview/steps/#steps-snakemake-rules) for a detailed breakdown of all steps and their purpose.
+Here is a list of all of the steps/rules in the Snakefile, ordered by occurrence. See [Steps (Snakemake Rules)](https://twylie.github.io/viromatch/overview/steps/#steps-snakemake-rules) for a detailed breakdown of all steps and their purpose.
 
 + prep_fastq_files
 + trim_fastq_files
