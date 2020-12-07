@@ -23,7 +23,6 @@ Twitter: [@kwylie5](https://twitter.com/kwylie5)
 
 + [Kristine M. Wylie Lab](http://research.peds.wustl.edu/labs/wylie_kristine/)    
 + [Faculty Bio](https://pediatrics.wustl.edu/Faculty/Wylie_Kristine)    
-+ [MGI Spotlight](https://www.genome.wustl.edu/people/kristine-wylie/)
 
 ## Todd N. Wylie
 
@@ -38,4 +37,3 @@ Twitter: [@ToddNWylie](https://twitter.com/ToddNWylie)
 
 + [NakedDNA.org](http://toddwylie.nakeddna.org/)
 + [Faculty Bio](https://pediatrics.wustl.edu/Faculty/Wylie_T)    
-+ [MGI Spotlight](https://www.genome.wustl.edu/people/todd-wylie/)
