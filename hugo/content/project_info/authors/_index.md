@@ -29,7 +29,6 @@ Twitter: [@kwylie5](https://twitter.com/kwylie5)
 
 **Todd N. Wylie** / Assistant Professor      
 Department of Pediatrics     
-McDonnell Genome Institute      
 Washington University School of Medicine      
 660 S. Euclid Avenue, Campus Box 8208      
 St. Louis, MO 63110      
