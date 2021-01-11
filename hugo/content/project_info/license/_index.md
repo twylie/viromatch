@@ -9,7 +9,7 @@ weight: 3
 
 ### Web Site Content
 
-The content of the ViroMatch web site and associated documentation is copyright (C) 2019—2020 T.N. Wylie and K.M. Wylie, and is released under Creative Commons:
+The content of the ViroMatch web site and associated documentation is copyright (C) 2019—2021 T.N. Wylie and K.M. Wylie, and is released under Creative Commons:
 
 [Attribution-NoDerivatives 4.0 International license](https://creativecommons.org/licenses/by-nd/4.0/). 
 
